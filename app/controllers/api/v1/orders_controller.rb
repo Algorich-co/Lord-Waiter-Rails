@@ -32,7 +32,13 @@ class Api::V1::OrdersController < Api::V1::BaseController
 
       order.recalculate_price!
 
-      OrderBroadcastJob.perform_now order
+      template = render_order_template(order)      
+      
+      ActionCable.server.broadcast "messages", 
+        order_id: order.id, 
+        order_state: order.state, 
+        template: template
+
 
       render json: {error: false, message: "success", response: Api::V1::OrderSerializer.new(order).as_json}
 
@@ -48,7 +54,13 @@ class Api::V1::OrdersController < Api::V1::BaseController
     else
       waiter_call = WaiterCall.create(table_id: waiter_call_params[:table_id], client_id: client.id)
       
-      WaiterCallBroadcastJob.perform_now waiter_call
+      template = render_waiter_template(waiter_call)
+
+      ActionCable.server.broadcast "messages", 
+        waiter_call_id: waiter_call.id, 
+        waiter_call_complete: waiter_call.complete, 
+        template: template
+
 
       render json: {error: false, message: "success"}
     end  
@@ -79,6 +91,14 @@ class Api::V1::OrdersController < Api::V1::BaseController
 
   def set_gcm_params
     params.permit(:restaurant_manager_id, :gcm)
+  end
+
+  def render_waiter_template(waiter_call)
+    HomeController.render(partial: 'restaurant_managers/waiter_calls', locals: { waiter_call: waiter_call }) 
+  end
+
+  def render_order_template(order)
+    HomeController.render(partial: 'restaurant_managers/inqueue_item', locals: { order: order }) 
   end
 
 end

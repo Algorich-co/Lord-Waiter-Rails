@@ -27,7 +27,11 @@ class RestaurantManagersController < ApplicationController
 		
 		order.prepare!
 
-		OrderBroadcastJob.perform_now order
+		ActionCable.server.broadcast "messages", 
+			order_id: order.id, 
+			order_state: order.state,
+			message: 'Message from order preparing',
+			user: 'controller'
 
 
 		n = Rpush::Gcm::Notification.new
@@ -50,7 +54,11 @@ class RestaurantManagersController < ApplicationController
 		order = Order.find(params[:order_id])
 		order.serve!
 
-		OrderBroadcastJob.perform_now order
+		ActionCable.server.broadcast "messages", 
+			order_id: order.id, 
+			order_state: order.state,
+			message: 'Message from order serving',
+			user: 'controller'
 
 
 		n = Rpush::Gcm::Notification.new
@@ -73,7 +81,11 @@ class RestaurantManagersController < ApplicationController
 		order = Order.find(params[:order_id])
 		order.checkout!
 
-		OrderBroadcastJob.perform_now order
+		ActionCable.server.broadcast "messages", 
+			order_id: order.id, 
+			order_state: order.state,
+			message: 'Message from order checkout',
+			user: 'controller'
 
 
 		n = Rpush::Gcm::Notification.new
@@ -97,7 +109,12 @@ class RestaurantManagersController < ApplicationController
 		waiter_call.complete = true
 		waiter_call.save!
 
-		WaiterCallBroadcastJob.perform_now waiter_call
+		ActionCable.server.broadcast "messages", 
+			waiter_call_id: waiter_call.id, 
+			waiter_call_complete: waiter_call.complete,
+			message: 'Message from order serving',
+			user: 'controller'
+
 
 		n = Rpush::Gcm::Notification.new
 		n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
