@@ -12,10 +12,18 @@
 </head>
 
 <body>
-	<%= render('layouts/navbar') %>
 
-	<%= yield %>
+	<header class="page-header">
+		<%= render('layouts/navbar') %>
+	</header>
 
-	<%= render('layouts/footer') %>
+	<main class="page-main">
+		<%= yield %>
+	</main>
+
+	<footer class="page-footer">
+		<%= render('layouts/footer') %>
+	</footer>
+
 </body>
 </html>
