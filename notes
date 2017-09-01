@@ -1,0 +1,23 @@
+For production:
+
+Install Rails
+Install Postgres
+Install Redis
+Setup Database, set Database.yml
+Set Production.rb settings
+
+Run RPush daemor by this command: 
+rpush start 
+(OR) 
+bundle exec rpush start
+
+Execute following commands once on console to create RPush app
+
+app = Rpush::Gcm::App.new
+app.name = "khapapk"
+app.auth_key = "SERVER_KEY"
+app.connections = 1
+app.save!
+
+
+
