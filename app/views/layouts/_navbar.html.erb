@@ -1,3 +1,38 @@
+<nav>
+  <div class="nav-wrapper white">
+    <div class="container">
+      <a href="/" class="brand-logo blue-grey-text text-darken-2"><%= t('app_name') %></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons blue-grey-text">menu</i></a>
+
+
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#features" class="blue-grey-text text-darken-2">Features</a></li>
+        <li><a href="#pricing" class="blue-grey-text text-darken-2">Pricing</a></li>
+        <li>
+          <%= link_to('Contact', new_message_path, class: "blue-grey-text text-darken-2") %> 
+        </li>
+
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li>
+          <%= link_to('Contact', new_message_path, class: "blue-grey-text text-darken-2") %> 
+        </li>         <% if restaurant_manager_signed_in? %>
+        <li class="waves-effect waves-light">
+          <%= link_to('Logout', destroy_restaurant_manager_session_path, method: :delete, class: "blue-grey-text text-darken-2") %>        
+        </li>
+        <% else %>
+        <li class="waves-effect waves-light">
+          <%= link_to('Login', new_restaurant_manager_session_path, class: "blue-grey-text text-darken-2")  %>  
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->

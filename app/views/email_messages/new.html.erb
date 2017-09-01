@@ -1,0 +1,40 @@
+<div class="section">
+
+	<div class="container">
+
+		<h3>Contact Us</h3>
+
+		<div class="row">
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
+		</div>
+
+		<div class="row">
+			<%= form_for @message, url: create_message_url, class: "col s12" do |f| %>
+			<div class="field input-field col s12">
+				<%= f.label :email %>
+				<%= f.email_field :email, autofocus: true %>
+			</div>
+
+			<div class="field input-field col s12">
+				<%= f.label :name %>
+				<%= f.text_field :name, autocomplete: "off" %>
+			</div>
+
+			<div class="field input-field col s12">
+				<%= f.text_area :body, autocomplete: "off", class: "materialize-textarea" %>
+				<%= f.label :body %>
+
+			</div>
+
+
+			<div class="row actions col s12">
+				<%= f.submit "Send Message", class: "waves-effect waves-light btn" %>
+			</div>
+			<% end %>
+
+		</div>
+	</div>
+
+</div>
