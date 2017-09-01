@@ -1,4 +1,6 @@
 class ChatroomsController < ApplicationController
+    before_action :authenticate_restaurant_manager!
+
 
   def index
     @chatroom = Chatroom.new

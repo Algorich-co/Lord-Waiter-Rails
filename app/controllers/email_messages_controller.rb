@@ -1,4 +1,5 @@
 class EmailMessagesController < ApplicationController
+
 	def new
 		@message = EmailMessage.new
 	end

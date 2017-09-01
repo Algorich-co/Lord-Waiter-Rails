@@ -1,6 +1,5 @@
 class RestaurantManagersController < ApplicationController
 	layout 'restaurant_managers'
-
 	before_action :authenticate_restaurant_manager!
 
 	def index
@@ -28,10 +27,10 @@ class RestaurantManagersController < ApplicationController
 		order.prepare!
 
 		ActionCable.server.broadcast "messages", 
-			order_id: order.id, 
-			order_state: order.state,
-			message: 'Message from order preparing',
-			user: 'controller'
+		order_id: order.id, 
+		order_state: order.state,
+		message: 'Message from order preparing',
+		user: 'controller'
 
 
 		n = Rpush::Gcm::Notification.new
@@ -55,10 +54,10 @@ class RestaurantManagersController < ApplicationController
 		order.serve!
 
 		ActionCable.server.broadcast "messages", 
-			order_id: order.id, 
-			order_state: order.state,
-			message: 'Message from order serving',
-			user: 'controller'
+		order_id: order.id, 
+		order_state: order.state,
+		message: 'Message from order serving',
+		user: 'controller'
 
 
 		n = Rpush::Gcm::Notification.new
@@ -82,10 +81,10 @@ class RestaurantManagersController < ApplicationController
 		order.checkout!
 
 		ActionCable.server.broadcast "messages", 
-			order_id: order.id, 
-			order_state: order.state,
-			message: 'Message from order checkout',
-			user: 'controller'
+		order_id: order.id, 
+		order_state: order.state,
+		message: 'Message from order checkout',
+		user: 'controller'
 
 
 		n = Rpush::Gcm::Notification.new
@@ -110,10 +109,10 @@ class RestaurantManagersController < ApplicationController
 		waiter_call.save!
 
 		ActionCable.server.broadcast "messages", 
-			waiter_call_id: waiter_call.id, 
-			waiter_call_complete: waiter_call.complete,
-			message: 'Message from order serving',
-			user: 'controller'
+		waiter_call_id: waiter_call.id, 
+		waiter_call_complete: waiter_call.complete,
+		message: 'Message from order serving',
+		user: 'controller'
 
 
 		n = Rpush::Gcm::Notification.new
