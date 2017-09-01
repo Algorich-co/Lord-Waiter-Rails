@@ -1,15 +1,15 @@
 class EmailMessagesController < ApplicationController
 	def new
-		@message = Message.new
+		@message = EmailMessage.new
 	end
 
 	def create
-		@message = Message.new message_params
+		@message = EmailMessage.new message_params
 
 		if @message.valid?
 			MessageMailer.send_message_confirmation(@message).deliver_now
 			MessageMailer.send_message_to_admin(@message).deliver_now
-			redirect_to new_message_url, notice: "Message received, thanks!"
+			redirect_to new_email_message_url, notice: "Message received, thanks!"
 		else
 			render :new
 		end

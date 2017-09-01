@@ -11,7 +11,7 @@
 		</div>
 
 		<div class="row">
-			<%= form_for @message, url: create_message_url, class: "col s12" do |f| %>
+			<%= form_for @message, url: create_email_message_url, class: "col s12" do |f| %>
 			<div class="field input-field col s12">
 				<%= f.label :email %>
 				<%= f.email_field :email, autofocus: true %>

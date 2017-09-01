@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
 
   get 'contact', to: 'email_messages#new', as: 'new_email_message'
-  post 'contact', to: 'email_messages#create', as: 'create_message'
+  post 'contact', to: 'email_messages#create', as: 'create_email_message'
   get 'policy', to: 'home#policy', as: 'policy'
   get 'eula', to: 'home#eula', as: 'eula'
 
