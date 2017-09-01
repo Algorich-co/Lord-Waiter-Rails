@@ -10,7 +10,7 @@
         <li><a href="#features" class="blue-grey-text text-darken-2">Features</a></li>
         <li><a href="#pricing" class="blue-grey-text text-darken-2">Pricing</a></li>
         <li>
-          <%= link_to('Contact', new_message_path, class: "blue-grey-text text-darken-2") %> 
+          <%= link_to('Contact', new_email_message_path, class: "blue-grey-text text-darken-2") %> 
         </li>
 
       </ul>
@@ -18,7 +18,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li>
-          <%= link_to('Contact', new_message_path, class: "blue-grey-text text-darken-2") %> 
+          <%= link_to('Contact', new_email_message_path, class: "blue-grey-text text-darken-2") %> 
         </li>         <% if restaurant_manager_signed_in? %>
         <li class="waves-effect waves-light">
           <%= link_to('Logout', destroy_restaurant_manager_session_path, method: :delete, class: "blue-grey-text text-darken-2") %>        
