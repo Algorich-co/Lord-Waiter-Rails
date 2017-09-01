@@ -1,0 +1,2 @@
+$('#order_<%= @order.id %>').fadeOut('slow').remove();
+$('#order_preparing').prepend("<%= escape_javascript render(partial: 'preparing_item', locals: {order: @order}) %>").hide().fadeIn('slow');

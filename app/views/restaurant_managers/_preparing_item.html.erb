@@ -1,0 +1,32 @@
+<div id="order_<%= order.id %>" class="row">
+	<div class="col s12 m12">
+		<div class="card">
+			<div class="card-content secondary_background">
+				<% line_items = order.line_items %>
+				<% order_items = Hash.new %>
+				<% line_items.each do |item|%>
+				<% if order_items[item.food_item.title].nil? %>
+				<% order_items[item.food_item.title] = 1 %>
+				<% else %>
+				<% order_items[item.food_item.title] += 1 %>
+				<% end%>
+				<% end %>
+
+				<span class="card-title">Table: <%= order.table.name %></span>
+
+
+				<ul class="collection">
+					<% order_items.each do |key, value| %>
+					<li class="collection-item secondary_foreground"><%= "#{key} x #{value}" %></li>
+					<% end %>
+				</ul>
+
+				<%= link_to '<i class="material-icons">arrow_forward</i>'.html_safe, restaurant_managers_serving_path(order), {method: :patch, remote: :true,  class: "btn-floating halfway-fab waves-effect waves-light"} %>
+
+			</div>
+			<div class="card-action secondary_foreground">
+				<p>Total: Rs. <%= order.total_price %></p>
+			</div>
+		</div>
+	</div>
+</div>	

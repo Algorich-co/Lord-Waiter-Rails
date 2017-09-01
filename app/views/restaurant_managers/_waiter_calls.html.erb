@@ -1,0 +1,18 @@
+<div id="waiter_call_<%= waiter_call.id %>" class="row">
+	<div class="col s12 m12">
+		<div class="card">
+			<div class="card-content secondary_background">
+
+				<span class="card-title">Table: <%= waiter_call.table.name %></span>
+
+				
+				<%= link_to '<i class="material-icons">check</i>'.html_safe, restaurant_managers_receive_waiter_call_path(waiter_call), {method: :patch, remote: :true, class: "btn-floating halfway-fab waves-effect waves-light"} %>
+				
+
+			</div>
+			<div class="card-action secondary_foreground">
+				<p>Call for waiter.</p>
+			</div>
+		</div>
+	</div>
+</div>

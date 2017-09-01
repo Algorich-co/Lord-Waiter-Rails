@@ -1,0 +1,54 @@
+<!-- <div class="container"> -->
+	<!-- <h2>Managers Control Panel</h2> -->
+
+	<div id="managers-container">
+
+	<div class="row">
+
+		<div class="col s12 m3">
+			
+			<h4 class="center-align">New Orders</h4>
+			
+			<div id="order_inqueue">
+			<% @in_queue.each do |order|%>
+			<%= render(partial: 'inqueue_item', locals: {order: order}) %>
+			<% end %>
+			</div>
+
+		</div>
+
+		<div class="col s12 m3">
+			<h4 class="center-align">Preparing</h4>
+
+			<div id="order_preparing">
+			<% @preparing.each do |order|%>
+			<%= render(partial: 'preparing_item', locals: {order: order}) %>
+			<% end %>
+			</div>
+
+		</div>
+		<div class="col s12 m3">
+			<h4 class="center-align">Serving</h4>
+
+			<div id="order_serving">
+			<% @serving.each do |order|%>
+			<%= render(partial: 'serving_item', locals: {order: order}) %>
+			<% end %>
+			</div>
+			
+		</div>
+		<div class="col s12 m3">
+			<h4 class="center-align">Waiter Calls</h4>
+			<div id="waiter_calls">
+			<% @waiter_calls.each do |waiter_call|%>
+			<%= render(partial: 'waiter_calls', locals: {waiter_call: waiter_call}) %>
+			<% end %>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>
+
+<!-- </div> -->
