@@ -1,5 +1,5 @@
 class Api::V1::OrdersController < Api::V1::BaseController
-  skip_before_filter  :verify_authenticity_token
+  skip_before_action  :verify_authenticity_token
 
   def create
 
@@ -34,7 +34,7 @@ class Api::V1::OrdersController < Api::V1::BaseController
 
       template = render_order_template(order)      
       
-      ActionCable.server.broadcast "messages", 
+      ActionCable.server.broadcast "messages-#{order.restaurant.id}", 
         order_id: order.id, 
         order_state: order.state, 
         template: template,
@@ -57,7 +57,7 @@ class Api::V1::OrdersController < Api::V1::BaseController
       
       template = render_waiter_template(waiter_call)
 
-      ActionCable.server.broadcast "messages", 
+      ActionCable.server.broadcast "messages-#{waiter_call.table.restaurant.id}", 
         waiter_call_id: waiter_call.id, 
         waiter_call_complete: waiter_call.complete, 
         template: template,

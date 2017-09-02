@@ -5,9 +5,10 @@ class MessagesController < ApplicationController
     message = Message.new(message_params)
     message.restaurant_manager = current_restaurant_manager
     if message.save
-      ActionCable.server.broadcast 'messages',
+      ActionCable.server.broadcast 'messages-1',
         message: message.content,
-        restaurant_manager: message.restaurant_manager.email
+        restaurant_manager: message.restaurant_manager.email,
+        type: "message"
       head :ok
     end
   end

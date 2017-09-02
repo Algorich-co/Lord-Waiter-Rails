@@ -3,6 +3,7 @@ class RestaurantManager < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable,:validatable, registerable
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable
+         # :session_limitable
 
   belongs_to :restaurant
   validates_presence_of :name

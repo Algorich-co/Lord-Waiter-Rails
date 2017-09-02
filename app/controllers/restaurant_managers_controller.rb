@@ -26,7 +26,7 @@ class RestaurantManagersController < ApplicationController
 		
 		order.prepare!
 
-		ActionCable.server.broadcast "messages", 
+		ActionCable.server.broadcast "messages-#{order.restaurant.id}", 
 		order_id: order.id, 
 		order_state: order.state,
 		message: 'Message from order preparing',
@@ -54,7 +54,7 @@ class RestaurantManagersController < ApplicationController
 		order = Order.find(params[:order_id])
 		order.serve!
 
-		ActionCable.server.broadcast "messages", 
+		ActionCable.server.broadcast "messages-#{order.restaurant.id}", 
 		order_id: order.id, 
 		order_state: order.state,
 		message: 'Message from order serving',
@@ -82,7 +82,7 @@ class RestaurantManagersController < ApplicationController
 		order = Order.find(params[:order_id])
 		order.checkout!
 
-		ActionCable.server.broadcast "messages", 
+		ActionCable.server.broadcast "messages-#{order.restaurant.id}", 
 		order_id: order.id, 
 		order_state: order.state,
 		message: 'Message from order checkout',
@@ -111,7 +111,7 @@ class RestaurantManagersController < ApplicationController
 		waiter_call.complete = true
 		waiter_call.save!
 
-		ActionCable.server.broadcast "messages", 
+		ActionCable.server.broadcast "messages-#{waiter_call.table.restaurant.id}", 
 		waiter_call_id: waiter_call.id, 
 		waiter_call_complete: waiter_call.complete,
 		message: 'Message from order serving',

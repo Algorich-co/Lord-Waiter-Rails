@@ -1,4 +1,6 @@
-App.messages = App.cable.subscriptions.create('MessagesChannel', {  
+<% Restaurant.all.each do |restaurant| %> 
+
+App['messages' + <%=restaurant.id%>] = App.cable.subscriptions.create({channel: 'MessagesChannel', restaurant_id: <%=restaurant.id%>}, {  
 	received: function(data) {
 
 
@@ -76,3 +78,7 @@ App.messages = App.cable.subscriptions.create('MessagesChannel', {
 	}
 
 });
+
+
+
+<% end %>
