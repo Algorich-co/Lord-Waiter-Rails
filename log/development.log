@@ -10960,3 +10960,6 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1307.6ms)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /home/taharushain/RailsProjects/action-cable-example/config/environment.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /home/taharushain/RailsProjects/action-cable-example/config/environment.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /home/taharushain/RailsProjects/action-cable-example/config/environment.rb:5)
