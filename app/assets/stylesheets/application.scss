@@ -1,4 +1,3 @@
-@import 'materialize';
 @import "materialize/extras/nouislider";
 @import "material_icons";
 @import "animate";
@@ -6,10 +5,12 @@
 @import "chatrooms";
 @import "messages";
 @import "users";
+
 @import "materialize/components/color";
 $primary-color: color("blue-grey", "darken-4") !default;
 $secondary-color: color("blue-grey", "darken-2") !default;
 $accent-color: #000000 !default;
+@import 'materialize';
 
 
 

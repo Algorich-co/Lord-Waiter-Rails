@@ -24,6 +24,7 @@ gem 'rpush'
 gem 'net-http-persistent', '< 3'
 gem 'rails_real_favicon'
 gem 'aws-sdk'
+gem 'serviceworker-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'

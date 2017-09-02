@@ -6410,3 +6410,597 @@ Processing by WelcomeController#about as HTML
 Completed 200 OK in 117ms (Views: 114.9ms | ActiveRecord: 0.4ms)
 
 
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:OrdersController> at /home/taharushain/RailsProjects/action-cable-example/app/controllers/api/v1/orders_controller.rb:2)
+Started GET "/" for 127.0.0.1 at 2017-09-02 10:30:36 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (25.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#about as HTML
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (3.1ms)
+  Rendered application/_favicon.html.erb (12.6ms)
+  Rendered layouts/_navbar.html.erb (6.6ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 2374ms (Views: 2347.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8a2d77bf00365a0412b6e9bf1fec8b715eda1799d3e4f0615125e04ffbd307e5.css?body=1" for 127.0.0.1 at 2017-09-02 10:30:40 +0500
+Started GET "/assets/application.self-7353a0c11472599bd430b69b866c2790da177f5f94989434262d2c9930ede3d9.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:40 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-02 10:30:40 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:30:40 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-02 10:30:42 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (371.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.3ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1044.4ms)
+Started GET "/" for 127.0.0.1 at 2017-09-02 10:30:47 +0500
+Processing by WelcomeController#about as HTML
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (0.7ms)
+  Rendered application/_favicon.html.erb (5.2ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:30:47 +0500
+MessagesChannel stopped streaming from messages
+Started GET "/assets/application.self-8a2d77bf00365a0412b6e9bf1fec8b715eda1799d3e4f0615125e04ffbd307e5.css?body=1" for 127.0.0.1 at 2017-09-02 10:30:47 +0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/initial.self-a93c872995e42c5b8c04edb56629dfeaa7ef6909e809f29f3a42c26b73a91f85.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/animation.self-544532c6613fb875a241de39ee1caa7e5a8828babe81173346df1b035a1c5cc2.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/velocity.min.self-88e63c17d79a0a43060e1e5893cf44e912a8554511b7c812d8bd5874cf962bfc.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/hammer.min.self-e34aebdc152f24d554cde579fd08f6bc8989093a40be08daac3b8ab73f7476ab.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/jquery.hammer.self-058ad89096dc19ff0acdee608d6b76da125f2c2eac2b534f9ee1129445d2dee0.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/global.self-d930e5295ff5eeec691c7b50e01531d0b8833d4c783185934a7c3e0338bb829c.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/collapsible.self-fdf41d8be8baa05abaa6e46fb5bb5299ad64008e59e531fada20f980960a32d1.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/dropdown.self-139eb5e39a9e6a0fdda1781bc8e397d355006eec30145614b35f626590303e86.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/modal.self-c5a9d3dcfeee46976a2297f21454e667e25b55568a576295fa456c25dc2e6da7.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/materialbox.self-806b88f7429987c13862e84ba948ed8fc2d3500bb8a8d07f95c875d3718fb109.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/tooltip.self-0a88afb5932c1cfed4ff948897b0984fa50c9aa648786098568b57924fbee6a7.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/tabs.self-378b7d22045d9862814f4d7e9bc53f9fe7e4645955cbc6370e3601d1dddcfade.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/parallax.self-1f02a9ea7d247347b376032b1a4d8651c2decd4d3346b9f740f536b16dd5b801.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/waves.self-ed24cac84d0f66808ff978810735b871f814c2bcf592cf9ccdf6b2bcdf8f5ba7.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/toasts.self-91859a18d500640df9116a39e9ce6187c9c41e643fb7cbba84d8f8f3f4b59d29.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/sideNav.self-8b2e60a863b1c3a3237184368e324c49ac2dbc81adf6c1f77ff8eeb740da108a.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/scrollspy.self-f96ac4ee16300b3cf0f07cedea0939bda2041c2904e9486891100d2e95c71d89.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/slider.self-b8512b10d3b81daf5d087a944ece5992a55f1ccc1dc6bc997eb9a49de8dbb8ca.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/cards.self-f16edb4fd2c25228dc8fdd9b83ce1b7e0bb7c0dafaea90e749c63995392ff4d0.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/forms.self-ba1803824f0ac0ca65402822dda01d73089f8a42fc1c980f5c2787ebd64f8b8d.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/chips.self-6dbc7b461eb0a16950fda4c8985e0b2571981e4243d181765a9d4b175c2d7765.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/pushpin.self-ed1452403a25a5ad10793d1cf1fe872ae5291ca66546e25a89f4d89ecc8bc37a.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/buttons.self-8509e11f3494625ed059bc2ae0e0970a07ebc12863e54e5be448d2f166469525.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/transitions.self-8504ce5ff296c8c8119fbf80bd1c22cf7c4069479608e79d45e890305ce083e2.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/date_picker/picker.self-fc661e33adcdc2b1c3bc7940ab322786024c014ec63b434566267ff5ff8318bc.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/scrollFire.self-d00940e53d10b9e85a5b6dc3ea869da2f0bc923dcbcfddf0ceaf7a20a62d54a0.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/date_picker/picker.date.self-b1d00a3d65b3b4a328888ecf08c2d46e913699bfb367858b4141689c6942f4c7.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/date_picker/picker.time.self-17ff79f6d082457a5e8e2662a6b6bc3083962460f4e321b7b2abc32d198ca704.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/character_counter.self-6e7c4e013fcd539576ed3165fbde0c4db9adc550244fea91cde05a0ff94a5028.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/carousel.self-a6cffcb3ca5e4efe5b9ee21905ac5a0a70e725463bd592e3fd7644aeda9e3474.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/tapTarget.self-73dee84356337136b58eb5418ace519ab2e59464dbdff2dc9210023b82a5eb10.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize-sprockets.self-b9b07dd4e7718454476f04edeb935022ae4f4d90934ab7ce913ff20c8baeb399.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/extras/nouislider.self-78ebbaf6d44ed2485fe963a4fa2106982e6bb4650f5d5ad8f7ec8cce36f98033.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/channels/chatrooms.self-e4713229ed841d924fbbf76987425a78e4a581fe1f8301b6d1cb3895802dd9b7.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/channels/messages.self-50ed545d7a853b60e2fc8b6ad9844878761d9554d2f9ed5de2e00fc8ccbb1dc7.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/chatrooms.self-ec69bbbf8b3636baa8311f15971f81cd4137c1d1697d54f91558606a230ebe51.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/application.self-7353a0c11472599bd430b69b866c2790da177f5f94989434262d2c9930ede3d9.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/assets/materialize/jquery.easing.1.4.self-1861f2a13696f306fd66ca3f06690cee8dbe0043cf4d5766f2a46207f1e66093.js?body=1" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:30:48 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/firebase-messaging.js.map" for 127.0.0.1 at 2017-09-02 10:30:51 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/firebase-messaging.js.map"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (331.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1471.4ms)
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-02 10:35:37 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (314.7ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1601.6ms)
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:OrdersController> at /home/taharushain/RailsProjects/action-cable-example/app/controllers/api/v1/orders_controller.rb:2)
+Started GET "/cable" for 127.0.0.1 at 2017-09-02 10:40:30 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:40:30 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-02 10:41:07 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (430.7ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.3ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1172.9ms)
+Started GET "/" for 127.0.0.1 at 2017-09-02 10:42:10 +0500
+Processing by WelcomeController#about as HTML
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (1.5ms)
+  Rendered application/_favicon.html.erb (5.6ms)
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 574ms (Views: 571.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+MessagesChannel stopped streaming from messages
+Started GET "/assets/application.self-fe864248295624ae954943bce101f2d6a3a1ab835103dca1027ff512178c886d.css?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/initial.self-a93c872995e42c5b8c04edb56629dfeaa7ef6909e809f29f3a42c26b73a91f85.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/animation.self-544532c6613fb875a241de39ee1caa7e5a8828babe81173346df1b035a1c5cc2.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/velocity.min.self-88e63c17d79a0a43060e1e5893cf44e912a8554511b7c812d8bd5874cf962bfc.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/hammer.min.self-e34aebdc152f24d554cde579fd08f6bc8989093a40be08daac3b8ab73f7476ab.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/jquery.hammer.self-058ad89096dc19ff0acdee608d6b76da125f2c2eac2b534f9ee1129445d2dee0.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/collapsible.self-fdf41d8be8baa05abaa6e46fb5bb5299ad64008e59e531fada20f980960a32d1.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/global.self-d930e5295ff5eeec691c7b50e01531d0b8833d4c783185934a7c3e0338bb829c.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/dropdown.self-139eb5e39a9e6a0fdda1781bc8e397d355006eec30145614b35f626590303e86.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/modal.self-c5a9d3dcfeee46976a2297f21454e667e25b55568a576295fa456c25dc2e6da7.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/materialbox.self-806b88f7429987c13862e84ba948ed8fc2d3500bb8a8d07f95c875d3718fb109.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/tabs.self-378b7d22045d9862814f4d7e9bc53f9fe7e4645955cbc6370e3601d1dddcfade.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/parallax.self-1f02a9ea7d247347b376032b1a4d8651c2decd4d3346b9f740f536b16dd5b801.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/tooltip.self-0a88afb5932c1cfed4ff948897b0984fa50c9aa648786098568b57924fbee6a7.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/waves.self-ed24cac84d0f66808ff978810735b871f814c2bcf592cf9ccdf6b2bcdf8f5ba7.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/toasts.self-91859a18d500640df9116a39e9ce6187c9c41e643fb7cbba84d8f8f3f4b59d29.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/sideNav.self-8b2e60a863b1c3a3237184368e324c49ac2dbc81adf6c1f77ff8eeb740da108a.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/scrollspy.self-f96ac4ee16300b3cf0f07cedea0939bda2041c2904e9486891100d2e95c71d89.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/forms.self-ba1803824f0ac0ca65402822dda01d73089f8a42fc1c980f5c2787ebd64f8b8d.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/jquery.easing.1.4.self-1861f2a13696f306fd66ca3f06690cee8dbe0043cf4d5766f2a46207f1e66093.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/slider.self-b8512b10d3b81daf5d087a944ece5992a55f1ccc1dc6bc997eb9a49de8dbb8ca.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/cards.self-f16edb4fd2c25228dc8fdd9b83ce1b7e0bb7c0dafaea90e749c63995392ff4d0.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/chips.self-6dbc7b461eb0a16950fda4c8985e0b2571981e4243d181765a9d4b175c2d7765.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/pushpin.self-ed1452403a25a5ad10793d1cf1fe872ae5291ca66546e25a89f4d89ecc8bc37a.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/buttons.self-8509e11f3494625ed059bc2ae0e0970a07ebc12863e54e5be448d2f166469525.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/transitions.self-8504ce5ff296c8c8119fbf80bd1c22cf7c4069479608e79d45e890305ce083e2.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/date_picker/picker.self-fc661e33adcdc2b1c3bc7940ab322786024c014ec63b434566267ff5ff8318bc.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/date_picker/picker.date.self-b1d00a3d65b3b4a328888ecf08c2d46e913699bfb367858b4141689c6942f4c7.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/scrollFire.self-d00940e53d10b9e85a5b6dc3ea869da2f0bc923dcbcfddf0ceaf7a20a62d54a0.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/date_picker/picker.time.self-17ff79f6d082457a5e8e2662a6b6bc3083962460f4e321b7b2abc32d198ca704.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/character_counter.self-6e7c4e013fcd539576ed3165fbde0c4db9adc550244fea91cde05a0ff94a5028.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/carousel.self-a6cffcb3ca5e4efe5b9ee21905ac5a0a70e725463bd592e3fd7644aeda9e3474.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/tapTarget.self-73dee84356337136b58eb5418ace519ab2e59464dbdff2dc9210023b82a5eb10.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize-sprockets.self-b9b07dd4e7718454476f04edeb935022ae4f4d90934ab7ce913ff20c8baeb399.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/materialize/extras/nouislider.self-78ebbaf6d44ed2485fe963a4fa2106982e6bb4650f5d5ad8f7ec8cce36f98033.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/channels/chatrooms.self-e4713229ed841d924fbbf76987425a78e4a581fe1f8301b6d1cb3895802dd9b7.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/channels/messages.self-50ed545d7a853b60e2fc8b6ad9844878761d9554d2f9ed5de2e00fc8ccbb1dc7.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/chatrooms.self-ec69bbbf8b3636baa8311f15971f81cd4137c1d1697d54f91558606a230ebe51.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/assets/application.self-7353a0c11472599bd430b69b866c2790da177f5f94989434262d2c9930ede3d9.js?body=1" for 127.0.0.1 at 2017-09-02 10:42:11 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-02 10:42:17 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:42:17 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/restaurant_managers" for 127.0.0.1 at 2017-09-02 10:42:35 +0500
+Processing by RestaurantManagersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant_managers/sign_in" for 127.0.0.1 at 2017-09-02 10:42:35 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (78.1ms)
+  Rendered application/_favicon.html.erb (4.8ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 441ms (Views: 298.7ms | ActiveRecord: 109.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:42:36 +0500
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for 127.0.0.1 at 2017-09-02 10:42:37 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:42:37 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-02 10:42:38 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (241.5ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (952.0ms)
+Started POST "/restaurant_managers/sign_in" for 127.0.0.1 at 2017-09-02 10:42:49 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2BATw+obEnIucxDLmk+dKtyB1cY6lim7o84cSa7lAyVdUPHmF+AcYglETa+X9hVj4+iMA1tJIF3q1CEsSNX+MA==", "restaurant_manager"=>{"email"=>"a@b.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRestaurantManager Load (69.4ms)[0m  [1m[34mSELECT  "restaurant_managers".* FROM "restaurant_managers" WHERE "restaurant_managers"."email" = $1 ORDER BY "restaurant_managers"."id" ASC LIMIT $2[0m  [["email", "a@b.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "restaurant_managers" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "restaurant_managers"."id" = $5[0m  [["current_sign_in_at", "2017-09-02 05:42:49.534689"], ["last_sign_in_at", "2017-09-01 21:46:17.495521"], ["sign_in_count", 3], ["updated_at", "2017-09-02 05:42:49.537188"], ["id", 1]]
+  [1m[35m (16.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant_managers
+Completed 302 Found in 277ms (ActiveRecord: 87.1ms)
+
+
+Started GET "/restaurant_managers" for 127.0.0.1 at 2017-09-02 10:42:49 +0500
+Processing by RestaurantManagersController#index as HTML
+  [1m[36mRestaurantManager Load (1.2ms)[0m  [1m[34mSELECT  "restaurant_managers".* FROM "restaurant_managers" WHERE "restaurant_managers"."id" = $1 ORDER BY "restaurant_managers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (21.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (6.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  [1m[36mTable Load (8.6ms)[0m  [1m[34mSELECT "tables".* FROM "tables" WHERE "tables"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  Rendering restaurant_managers/index.html.erb within layouts/restaurant_managers
+  [1m[36mWaiterCall Load (28.2ms)[0m  [1m[34mSELECT "waiter_calls".* FROM "waiter_calls" WHERE 1=0 AND "waiter_calls"."complete" = $1[0m  [["complete", "f"]]
+  Rendered restaurant_managers/index.html.erb within layouts/restaurant_managers (30.7ms)
+  Rendered application/_favicon.html.erb (5.5ms)
+  Rendered layouts/_navbar_restaurant_managers.html.erb (0.7ms)
+Completed 200 OK in 272ms (Views: 100.1ms | ActiveRecord: 75.8ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:42:49 +0500
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for 127.0.0.1 at 2017-09-02 10:42:50 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:42:50 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-02 10:42:51 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (237.6ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1437.7ms)
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-02 10:43:37 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (458.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1213.8ms)
+Started GET "/restaurant_managers" for 127.0.0.1 at 2017-09-02 10:45:49 +0500
+Processing by RestaurantManagersController#index as HTML
+  [1m[36mRestaurantManager Load (0.6ms)[0m  [1m[34mSELECT  "restaurant_managers".* FROM "restaurant_managers" WHERE "restaurant_managers"."id" = $1 ORDER BY "restaurant_managers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  [1m[36mTable Load (0.3ms)[0m  [1m[34mSELECT "tables".* FROM "tables" WHERE "tables"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  Rendering restaurant_managers/index.html.erb within layouts/restaurant_managers
+  [1m[36mWaiterCall Load (0.6ms)[0m  [1m[34mSELECT "waiter_calls".* FROM "waiter_calls" WHERE 1=0 AND "waiter_calls"."complete" = $1[0m  [["complete", "f"]]
+  Rendered restaurant_managers/index.html.erb within layouts/restaurant_managers (2.0ms)
+  Rendered application/_favicon.html.erb (6.6ms)
+  Rendered layouts/_navbar_restaurant_managers.html.erb (0.7ms)
+Completed 200 OK in 127ms (Views: 119.3ms | ActiveRecord: 2.1ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:45:49 +0500
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for 127.0.0.1 at 2017-09-02 10:45:50 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-02 10:45:50 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-02 10:45:51 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (274.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (883.0ms)
+Started GET "/restaurant_managers" for 127.0.0.1 at 2017-09-02 10:45:54 +0500
+Processing by RestaurantManagersController#index as HTML
+  [1m[36mRestaurantManager Load (0.7ms)[0m  [1m[34mSELECT  "restaurant_managers".* FROM "restaurant_managers" WHERE "restaurant_managers"."id" = $1 ORDER BY "restaurant_managers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  [1m[36mTable Load (0.5ms)[0m  [1m[34mSELECT "tables".* FROM "tables" WHERE "tables"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  Rendering restaurant_managers/index.html.erb within layouts/restaurant_managers
+  [1m[36mWaiterCall Load (0.9ms)[0m  [1m[34mSELECT "waiter_calls".* FROM "waiter_calls" WHERE 1=0 AND "waiter_calls"."complete" = $1[0m  [["complete", "f"]]
+  Rendered restaurant_managers/index.html.erb within layouts/restaurant_managers (2.8ms)
+  Rendered application/_favicon.html.erb (9.0ms)
+  Rendered layouts/_navbar_restaurant_managers.html.erb (0.8ms)
+Completed 200 OK in 141ms (Views: 123.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/restaurant_managers" for 127.0.0.1 at 2017-09-02 10:46:02 +0500
+Processing by RestaurantManagersController#index as */*
+  [1m[36mRestaurantManager Load (0.6ms)[0m  [1m[34mSELECT  "restaurant_managers".* FROM "restaurant_managers" WHERE "restaurant_managers"."id" = $1 ORDER BY "restaurant_managers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  [1m[36mTable Load (0.5ms)[0m  [1m[34mSELECT "tables".* FROM "tables" WHERE "tables"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  Rendering restaurant_managers/index.html.erb within layouts/restaurant_managers
+  [1m[36mWaiterCall Load (0.4ms)[0m  [1m[34mSELECT "waiter_calls".* FROM "waiter_calls" WHERE 1=0 AND "waiter_calls"."complete" = $1[0m  [["complete", "f"]]
+  Rendered restaurant_managers/index.html.erb within layouts/restaurant_managers (1.7ms)
+  Rendered application/_favicon.html.erb (9.6ms)
+  Rendered layouts/_navbar_restaurant_managers.html.erb (1.2ms)
+Completed 200 OK in 170ms (Views: 153.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/firebase-messaging.js.map" for 127.0.0.1 at 2017-09-02 10:46:02 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/firebase-messaging.js.map"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [122 times] (1418.3ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (2567.1ms)
