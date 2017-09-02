@@ -1,9 +1,78 @@
 App.messages = App.cable.subscriptions.create('MessagesChannel', {  
-  received: function(data) {
-    $("#messages").removeClass('hidden')
-    return $('#messages').append(this.renderMessage(data));
-  },
-  renderMessage: function(data) {
-    return "<p> <b>" + data.restaurant_manager + ": </b>" + data.message + "</p>";
-  }
+	received: function(data) {
+
+
+		if (data.type === "message") {
+			$("#messages").removeClass('hidden');
+			$('#messages').append(this.renderMessage(data));
+		} else if (data.type === "order"){
+		this.orderReceived(data);
+		}
+		else if(data.type === "waiter_call"){
+		this.waiterRequestReceived(data);
+		}
+
+
+		return true;
+	},
+	renderMessage: function(data) {
+		return "<p> <b>" + data.restaurant_manager + ": </b>" + data.message + "</p>";
+	},
+	orderReceived: function(data){
+
+		if(data.order_state == "in_queue"){
+			var div_id = "#order_"+data.order_id;
+			if(! $(div_id).length ){
+				var template = data.template;
+				$("#order_inqueue").prepend(template).fadeIn('slow');
+			}
+		}
+		else if (data.order_state == "in_progress")
+		{
+
+			var div_id = "#order_"+data.order_id;
+			var a_href = $(div_id).find('a').attr('href');
+			var new_href = a_href.replace("order_preparing", "order_serving");
+			$(div_id).find('a').attr('href',new_href);
+
+			$(div_id).fadeOut("slow", function () {
+				$(div_id).prependTo("#order_preparing");
+				$(div_id).fadeIn('slow');
+			});
+
+		}
+		else if (data.order_state == "served")
+		{
+			var div_id = "#order_"+data.order_id;
+			var a_href = $(div_id).find('a').attr('href');
+			var new_href = a_href.replace("order_serving", "order_checkout");
+			$(div_id).find('a').attr('href',new_href);
+
+			$(div_id).fadeOut("slow", function () {
+				$(div_id).prependTo("#order_serving");
+				$(div_id).fadeIn('slow');
+			});
+
+		}
+		else if (data.order_state == "complete")
+		{
+			var div_id = "#order_"+data.order_id;
+			$(div_id).fadeOut('slow').remove();
+
+		}
+	},
+	waiterRequestReceived: function(data) {
+		var div_id = "#waiter_call_"+data.waiter_call_id;
+
+		if(!data.waiter_call_complete && !$(div_id).length ){
+			// console.log("One");
+			var template = data.template;
+			$("#waiter_calls").prepend(template).fadeIn('slow');
+			
+		}else if(data.waiter_call_complete && $(div_id).length){
+			// console.log("Two");
+			$(div_id).fadeOut('slow').remove();
+		}
+	}
+
 });

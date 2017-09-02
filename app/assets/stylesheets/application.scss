@@ -18,12 +18,16 @@ $accent-color: #000000 !default;
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 html{
-	font-family: Lato;
+	font-family: Lato, Roboto, GillSans, Calibri, Trebuchet, sans-serif;
 }
 
-body, html {
-	height: 100%;
-}
+
+
+// html, body {
+// 	height: 100%;
+// 	margin: 0px; 
+// 	padding: 0px;
+// }
 
 body {
 	display: flex;
@@ -31,8 +35,15 @@ body {
 	flex-direction: column;
 }
 
-main {
-	flex: 1 0 auto;
+
+
+.secondary_background{
+	background: $secondary-color;
+	color: white;
+}
+
+.secondary_foreground{
+	color:  $secondary-color;
 }
 
 
@@ -43,16 +54,20 @@ main {
 }
 
 .parallax-container {
-	height: 100%;
+	height: 100vh;
 }
 
-.snackbar.error {
-	background-color: red;
+main {
+	flex: 1 0 auto;
 }
-.snackbar.alert {
-	background-color: yellow;
-	color: black;
-}
-.snackbar.notice {
-	background-color: green;
-}
+
+// .snackbar.error {
+// 	background-color: red;
+// }
+// .snackbar.alert {
+// 	background-color: yellow;
+// 	color: black;
+// }
+// .snackbar.notice {
+// 	background-color: green;
+// }

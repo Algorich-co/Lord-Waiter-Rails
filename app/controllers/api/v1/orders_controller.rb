@@ -37,7 +37,8 @@ class Api::V1::OrdersController < Api::V1::BaseController
       ActionCable.server.broadcast "messages", 
         order_id: order.id, 
         order_state: order.state, 
-        template: template
+        template: template,
+        type: 'order'
 
 
       render json: {error: false, message: "success", response: Api::V1::OrderSerializer.new(order).as_json}
@@ -59,7 +60,8 @@ class Api::V1::OrdersController < Api::V1::BaseController
       ActionCable.server.broadcast "messages", 
         waiter_call_id: waiter_call.id, 
         waiter_call_complete: waiter_call.complete, 
-        template: template
+        template: template,
+        type: 'waiter_call'
 
 
       render json: {error: false, message: "success"}
