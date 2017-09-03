@@ -1,4 +1,4 @@
-class RestaurantManagersController < ApplicationController
+class RestaurantManagers::DashboardController < ApplicationController
 	layout 'restaurant_managers'
 	before_action :authenticate_restaurant_manager!
 
