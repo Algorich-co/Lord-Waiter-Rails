@@ -7,7 +7,7 @@ class EmailMessagesController < ApplicationController
 	def create
 		@message = EmailMessage.new message_params
 
-		if @message.valid?
+		if verify_recaptcha(model: @message) && @message.valid?
 			MessageMailer.send_message_confirmation(@message).deliver_now
 			MessageMailer.send_message_to_admin(@message).deliver_now
 			redirect_to new_email_message_url, notice: "Message received, thanks!"
@@ -19,6 +19,6 @@ class EmailMessagesController < ApplicationController
 	private
 
 	def message_params
-		params.require(:message).permit(:name, :email, :body)
+		params.require(:email_message).permit(:name, :email, :body)
 	end
 end

@@ -10963,3 +10963,1027 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /home/taharushain/RailsProjects/action-cable-example/config/environment.rb:5)
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /home/taharushain/RailsProjects/action-cable-example/config/environment.rb:5)
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /home/taharushain/RailsProjects/action-cable-example/config/environment.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /home/taharushain/RailsProjects/action-cable-example/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2017-09-03 14:37:27 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (27.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1814.3ms)
+  Rendered application/_favicon.html.erb (11.2ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 2529ms (Views: 2493.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-503f0b8d1f38e48a8c1efafe640d8bc9a712946212d529cd61e704f573660478.css?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/initial.self-a93c872995e42c5b8c04edb56629dfeaa7ef6909e809f29f3a42c26b73a91f85.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/animation.self-544532c6613fb875a241de39ee1caa7e5a8828babe81173346df1b035a1c5cc2.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/velocity.min.self-88e63c17d79a0a43060e1e5893cf44e912a8554511b7c812d8bd5874cf962bfc.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/hammer.min.self-e34aebdc152f24d554cde579fd08f6bc8989093a40be08daac3b8ab73f7476ab.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/jquery.hammer.self-058ad89096dc19ff0acdee608d6b76da125f2c2eac2b534f9ee1129445d2dee0.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/global.self-d930e5295ff5eeec691c7b50e01531d0b8833d4c783185934a7c3e0338bb829c.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/collapsible.self-fdf41d8be8baa05abaa6e46fb5bb5299ad64008e59e531fada20f980960a32d1.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/dropdown.self-139eb5e39a9e6a0fdda1781bc8e397d355006eec30145614b35f626590303e86.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/modal.self-c5a9d3dcfeee46976a2297f21454e667e25b55568a576295fa456c25dc2e6da7.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/parallax.self-1f02a9ea7d247347b376032b1a4d8651c2decd4d3346b9f740f536b16dd5b801.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/materialbox.self-806b88f7429987c13862e84ba948ed8fc2d3500bb8a8d07f95c875d3718fb109.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/waves.self-ed24cac84d0f66808ff978810735b871f814c2bcf592cf9ccdf6b2bcdf8f5ba7.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/tooltip.self-0a88afb5932c1cfed4ff948897b0984fa50c9aa648786098568b57924fbee6a7.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/tabs.self-378b7d22045d9862814f4d7e9bc53f9fe7e4645955cbc6370e3601d1dddcfade.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/toasts.self-91859a18d500640df9116a39e9ce6187c9c41e643fb7cbba84d8f8f3f4b59d29.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/sideNav.self-8b2e60a863b1c3a3237184368e324c49ac2dbc81adf6c1f77ff8eeb740da108a.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/scrollspy.self-f96ac4ee16300b3cf0f07cedea0939bda2041c2904e9486891100d2e95c71d89.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/forms.self-ba1803824f0ac0ca65402822dda01d73089f8a42fc1c980f5c2787ebd64f8b8d.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/cards.self-f16edb4fd2c25228dc8fdd9b83ce1b7e0bb7c0dafaea90e749c63995392ff4d0.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/chips.self-6dbc7b461eb0a16950fda4c8985e0b2571981e4243d181765a9d4b175c2d7765.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/slider.self-b8512b10d3b81daf5d087a944ece5992a55f1ccc1dc6bc997eb9a49de8dbb8ca.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/pushpin.self-ed1452403a25a5ad10793d1cf1fe872ae5291ca66546e25a89f4d89ecc8bc37a.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/buttons.self-8509e11f3494625ed059bc2ae0e0970a07ebc12863e54e5be448d2f166469525.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/transitions.self-8504ce5ff296c8c8119fbf80bd1c22cf7c4069479608e79d45e890305ce083e2.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/scrollFire.self-d00940e53d10b9e85a5b6dc3ea869da2f0bc923dcbcfddf0ceaf7a20a62d54a0.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/date_picker/picker.date.self-b1d00a3d65b3b4a328888ecf08c2d46e913699bfb367858b4141689c6942f4c7.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/date_picker/picker.self-fc661e33adcdc2b1c3bc7940ab322786024c014ec63b434566267ff5ff8318bc.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:30 +0500
+Started GET "/assets/materialize/date_picker/picker.time.self-17ff79f6d082457a5e8e2662a6b6bc3083962460f4e321b7b2abc32d198ca704.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/materialize/character_counter.self-6e7c4e013fcd539576ed3165fbde0c4db9adc550244fea91cde05a0ff94a5028.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/materialize/carousel.self-a6cffcb3ca5e4efe5b9ee21905ac5a0a70e725463bd592e3fd7644aeda9e3474.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/materialize/tapTarget.self-73dee84356337136b58eb5418ace519ab2e59464dbdff2dc9210023b82a5eb10.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/materialize-sprockets.self-b9b07dd4e7718454476f04edeb935022ae4f4d90934ab7ce913ff20c8baeb399.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/materialize/extras/nouislider.self-78ebbaf6d44ed2485fe963a4fa2106982e6bb4650f5d5ad8f7ec8cce36f98033.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/channels/chatrooms.self-e4713229ed841d924fbbf76987425a78e4a581fe1f8301b6d1cb3895802dd9b7.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/channels/messages.self-c156f224c14ee4b1b434d6d0bbe8f7633cd4b0f61bbd58fd234825d6529c6001.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/chatrooms.self-ec69bbbf8b3636baa8311f15971f81cd4137c1d1697d54f91558606a230ebe51.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/application.self-7353a0c11472599bd430b69b866c2790da177f5f94989434262d2c9930ede3d9.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/assets/materialize/jquery.easing.1.4.self-1861f2a13696f306fd66ca3f06690cee8dbe0043cf4d5766f2a46207f1e66093.js?body=1" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:31 +0500
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-03 14:37:33 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [108 times] (66.1ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.6ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.5ms)
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:37:38 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (32.6ms)
+  Rendered application/_favicon.html.erb (4.8ms)
+  Rendered layouts/_navbar_email_messages.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 148ms (Views: 145.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:37:41 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:41 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:41 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:41 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:37:53 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:53 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:53 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:53 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:37:58 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:58 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:58 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:37:58 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:38:10 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:10 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:10 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:10 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:38:20 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:20 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:20 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:20 +0500
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-03 14:38:27 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [108 times] (40.4ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.5ms)
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:38:31 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:31 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:31 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:31 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:38:42 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:42 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:42 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:42 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:38:54 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:54 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:54 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:38:54 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:06 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:06 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:06 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:06 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:10 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:10 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:10 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:10 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:12 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:12 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:12 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:12 +0500
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:39:12 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (2.4ms)
+  Rendered application/_favicon.html.erb (7.5ms)
+  Rendered layouts/_navbar_email_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 112ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-503f0b8d1f38e48a8c1efafe640d8bc9a712946212d529cd61e704f573660478.css?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/initial.self-a93c872995e42c5b8c04edb56629dfeaa7ef6909e809f29f3a42c26b73a91f85.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/animation.self-544532c6613fb875a241de39ee1caa7e5a8828babe81173346df1b035a1c5cc2.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/velocity.min.self-88e63c17d79a0a43060e1e5893cf44e912a8554511b7c812d8bd5874cf962bfc.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/hammer.min.self-e34aebdc152f24d554cde579fd08f6bc8989093a40be08daac3b8ab73f7476ab.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/global.self-d930e5295ff5eeec691c7b50e01531d0b8833d4c783185934a7c3e0338bb829c.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/jquery.hammer.self-058ad89096dc19ff0acdee608d6b76da125f2c2eac2b534f9ee1129445d2dee0.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/collapsible.self-fdf41d8be8baa05abaa6e46fb5bb5299ad64008e59e531fada20f980960a32d1.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/dropdown.self-139eb5e39a9e6a0fdda1781bc8e397d355006eec30145614b35f626590303e86.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/modal.self-c5a9d3dcfeee46976a2297f21454e667e25b55568a576295fa456c25dc2e6da7.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/materialbox.self-806b88f7429987c13862e84ba948ed8fc2d3500bb8a8d07f95c875d3718fb109.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/parallax.self-1f02a9ea7d247347b376032b1a4d8651c2decd4d3346b9f740f536b16dd5b801.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/tabs.self-378b7d22045d9862814f4d7e9bc53f9fe7e4645955cbc6370e3601d1dddcfade.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/tooltip.self-0a88afb5932c1cfed4ff948897b0984fa50c9aa648786098568b57924fbee6a7.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/waves.self-ed24cac84d0f66808ff978810735b871f814c2bcf592cf9ccdf6b2bcdf8f5ba7.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/sideNav.self-8b2e60a863b1c3a3237184368e324c49ac2dbc81adf6c1f77ff8eeb740da108a.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/toasts.self-91859a18d500640df9116a39e9ce6187c9c41e643fb7cbba84d8f8f3f4b59d29.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/forms.self-ba1803824f0ac0ca65402822dda01d73089f8a42fc1c980f5c2787ebd64f8b8d.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/scrollspy.self-f96ac4ee16300b3cf0f07cedea0939bda2041c2904e9486891100d2e95c71d89.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/slider.self-b8512b10d3b81daf5d087a944ece5992a55f1ccc1dc6bc997eb9a49de8dbb8ca.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/cards.self-f16edb4fd2c25228dc8fdd9b83ce1b7e0bb7c0dafaea90e749c63995392ff4d0.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/chips.self-6dbc7b461eb0a16950fda4c8985e0b2571981e4243d181765a9d4b175c2d7765.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/pushpin.self-ed1452403a25a5ad10793d1cf1fe872ae5291ca66546e25a89f4d89ecc8bc37a.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/transitions.self-8504ce5ff296c8c8119fbf80bd1c22cf7c4069479608e79d45e890305ce083e2.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/buttons.self-8509e11f3494625ed059bc2ae0e0970a07ebc12863e54e5be448d2f166469525.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/date_picker/picker.self-fc661e33adcdc2b1c3bc7940ab322786024c014ec63b434566267ff5ff8318bc.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/scrollFire.self-d00940e53d10b9e85a5b6dc3ea869da2f0bc923dcbcfddf0ceaf7a20a62d54a0.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/date_picker/picker.date.self-b1d00a3d65b3b4a328888ecf08c2d46e913699bfb367858b4141689c6942f4c7.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/date_picker/picker.time.self-17ff79f6d082457a5e8e2662a6b6bc3083962460f4e321b7b2abc32d198ca704.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/character_counter.self-6e7c4e013fcd539576ed3165fbde0c4db9adc550244fea91cde05a0ff94a5028.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/tapTarget.self-73dee84356337136b58eb5418ace519ab2e59464dbdff2dc9210023b82a5eb10.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/carousel.self-a6cffcb3ca5e4efe5b9ee21905ac5a0a70e725463bd592e3fd7644aeda9e3474.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize-sprockets.self-b9b07dd4e7718454476f04edeb935022ae4f4d90934ab7ce913ff20c8baeb399.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/jquery.easing.1.4.self-1861f2a13696f306fd66ca3f06690cee8dbe0043cf4d5766f2a46207f1e66093.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/materialize/extras/nouislider.self-78ebbaf6d44ed2485fe963a4fa2106982e6bb4650f5d5ad8f7ec8cce36f98033.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/channels/chatrooms.self-e4713229ed841d924fbbf76987425a78e4a581fe1f8301b6d1cb3895802dd9b7.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/chatrooms.self-ec69bbbf8b3636baa8311f15971f81cd4137c1d1697d54f91558606a230ebe51.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/application.self-7353a0c11472599bd430b69b866c2790da177f5f94989434262d2c9930ede3d9.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/assets/channels/messages.self-c156f224c14ee4b1b434d6d0bbe8f7633cd4b0f61bbd58fd234825d6529c6001.js?body=1" for 127.0.0.1 at 2017-09-03 14:39:13 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:14 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:14 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:14 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:14 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:23 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:23 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:23 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:23 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:36 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:36 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:36 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:36 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:44 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:44 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:44 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:44 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:39:53 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:53 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:53 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:39:53 +0500
+Started POST "/contact" for 127.0.0.1 at 2017-09-03 14:39:59 +0500
+Processing by EmailMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vtdptL9W4FakCTZQa3d+1q6TtMb4uOZpIofJ5GODWBp6F/7DHlp4+A4KKuZVkRY+McfgZ+2ePwQMMvIyn66oWQ==", "email_message"=>{"email"=>"taharushain@gmail.com", "name"=>"Taha Rushain", "body"=>"Test message from \r\nTaha Rushain\r\nAfter reCAPTCHA"}, "g-recaptcha-response"=>"03AOmkcwKai_1U4ZxrMOAr8moKv2F9Yx3XpEG87zp2dW-Hy5Z9Iugf7U1qlFWVGXRh7bMKME64cVwuvaacc6_XUSvOLEPax8QQQe7X1shPSOlluOH3QfPtHP6jof3Z1TXkTcsF1uDByLIgImUMDkbrkUvbe19NFr2PR9yFxZlGvLWNntZa7WBfR9SxpBvkCibR_b1-p1exkNRMGL-VUo864JxDvc4RayRj7cDucQTLgW2D2PZa2w5Gk34HpneUUbHCSZT764kWyMHa7UkqQ5NJNg7qGZjZdhLsjJeV_vSSFalxF6qmcXwFVoHPfkY4CiTSkhe_0b3wYAkQrC0-HCELYxlT0FZS0YRvBl-ktGSz0fMssyw3k8C0-x0JwKbUEdW0Uca41agsVuGCIEkvQw_e-0Fau_x7nqUs-_NpBxd7FBOcItiX2UZkqIQ9OR43yFnuH4MQ_HwzKIFo", "commit"=>"Send Message"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/email_messages_controller.rb:22:in `message_params'
+app/controllers/email_messages_controller.rb:8:in `create'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.0ms)
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-03 14:40:01 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [108 times] (46.2ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.7ms)
+Started POST "/contact" for 127.0.0.1 at 2017-09-03 14:40:22 +0500
+Processing by EmailMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vtdptL9W4FakCTZQa3d+1q6TtMb4uOZpIofJ5GODWBp6F/7DHlp4+A4KKuZVkRY+McfgZ+2ePwQMMvIyn66oWQ==", "email_message"=>{"email"=>"taharushain@gmail.com", "name"=>"Taha Rushain", "body"=>"Test message from \r\nTaha Rushain\r\nAfter reCAPTCHA"}, "g-recaptcha-response"=>"03AOmkcwKai_1U4ZxrMOAr8moKv2F9Yx3XpEG87zp2dW-Hy5Z9Iugf7U1qlFWVGXRh7bMKME64cVwuvaacc6_XUSvOLEPax8QQQe7X1shPSOlluOH3QfPtHP6jof3Z1TXkTcsF1uDByLIgImUMDkbrkUvbe19NFr2PR9yFxZlGvLWNntZa7WBfR9SxpBvkCibR_b1-p1exkNRMGL-VUo864JxDvc4RayRj7cDucQTLgW2D2PZa2w5Gk34HpneUUbHCSZT764kWyMHa7UkqQ5NJNg7qGZjZdhLsjJeV_vSSFalxF6qmcXwFVoHPfkY4CiTSkhe_0b3wYAkQrC0-HCELYxlT0FZS0YRvBl-ktGSz0fMssyw3k8C0-x0JwKbUEdW0Uca41agsVuGCIEkvQw_e-0Fau_x7nqUs-_NpBxd7FBOcItiX2UZkqIQ9OR43yFnuH4MQ_HwzKIFo", "commit"=>"Send Message"}
+  Rendering message_mailer/send_message_confirmation.html.erb within layouts/mailer
+  Rendered message_mailer/send_message_confirmation.html.erb within layouts/mailer (0.6ms)
+  Rendering message_mailer/send_message_confirmation.text.erb within layouts/mailer
+  Rendered message_mailer/send_message_confirmation.text.erb within layouts/mailer (0.7ms)
+MessageMailer#send_message_confirmation: processed outbound mail in 239.8ms
+Sent mail to taharushain@gmail.com (4500.1ms)
+Date: Sun, 03 Sep 2017 14:40:24 +0500
+From: noreply@lordwaiter.com
+To: taharushain@gmail.com
+Message-ID: <59abce0888027_27f62ab928e2115069754@zombie.mail>
+Subject: Message Received
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_59abce08858e3_27f62ab928e21150696f0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_59abce08858e3_27f62ab928e21150696f0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you, for contacting us.
+
+"We have received your following message and you will hear from us soon.""
+
+Test message from 
+Taha Rushain
+After reCAPTCHA
+
+We will get back to you soon.
+
+Best Regards,
+Support Team.
+
+Lord Waiter.com
+
+----==_mimepart_59abce08858e3_27f62ab928e21150696f0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Thank you, for contacting us</h1>
+
+<p>
+  "We have received your following message and you will hear from us soon."
+</p>
+
+<p>
+	Test message from 
+Taha Rushain
+After reCAPTCHA
+</p>
+
+<h3>We will get back to you soon.</h3>
+
+<p>Best Regards,</p>
+<p>Support Team.</p>
+<p><b>Lord Waiter</b></p>
+  </body>
+</html>
+
+----==_mimepart_59abce08858e3_27f62ab928e21150696f0--
+
+  Rendering message_mailer/send_message_to_admin.html.erb within layouts/mailer
+  Rendered message_mailer/send_message_to_admin.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/send_message_to_admin.text.erb within layouts/mailer
+  Rendered message_mailer/send_message_to_admin.text.erb within layouts/mailer (0.3ms)
+MessageMailer#send_message_to_admin: processed outbound mail in 14.2ms
+Sent mail to support@lordwaiter.com (3992.9ms)
+Date: Sun, 03 Sep 2017 14:40:29 +0500
+From: noreply@lordwaiter.com
+To: support@lordwaiter.com
+Message-ID: <59abce0dfef7_27f62ab928e21150699ae@zombie.mail>
+Subject: Message Received
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_59abce0df73b_27f62ab928e211506983f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_59abce0df73b_27f62ab928e211506983f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+We have received the following message from:
+
+Email:  taharushain@gmail.com
+Name:  Taha Rushain
+Message:  Test message from 
+Taha Rushain
+After reCAPTCHA
+
+Kindly look into this as soon as possible.
+
+Best Regards,
+Support Team.
+
+Lord Waiter.com
+
+----==_mimepart_59abce0df73b_27f62ab928e211506983f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>We have received the following message from:</h1>
+
+<p><b>Email: </b> taharushain@gmail.com</p>
+<p><b>Name: </b> Taha Rushain</p>
+<p><b>Message: </b> Test message from 
+Taha Rushain
+After reCAPTCHA</p>
+
+<h3>Kindly look into this as soon as possible.</h3>
+
+<p>Best Regards,</p>
+<p>Support Team.</p>
+<p><b>Lord Waiter</b></p>
+
+  </body>
+</html>
+
+----==_mimepart_59abce0df73b_27f62ab928e211506983f--
+
+Redirected to http://localhost:3000/contact
+Completed 302 Found in 10434ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (2.8ms)
+  Rendered application/_favicon.html.erb (4.9ms)
+  Rendered layouts/_navbar_email_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 89ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-503f0b8d1f38e48a8c1efafe640d8bc9a712946212d529cd61e704f573660478.css?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/initial.self-a93c872995e42c5b8c04edb56629dfeaa7ef6909e809f29f3a42c26b73a91f85.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/animation.self-544532c6613fb875a241de39ee1caa7e5a8828babe81173346df1b035a1c5cc2.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/velocity.min.self-88e63c17d79a0a43060e1e5893cf44e912a8554511b7c812d8bd5874cf962bfc.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/hammer.min.self-e34aebdc152f24d554cde579fd08f6bc8989093a40be08daac3b8ab73f7476ab.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/global.self-d930e5295ff5eeec691c7b50e01531d0b8833d4c783185934a7c3e0338bb829c.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/jquery.hammer.self-058ad89096dc19ff0acdee608d6b76da125f2c2eac2b534f9ee1129445d2dee0.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/collapsible.self-fdf41d8be8baa05abaa6e46fb5bb5299ad64008e59e531fada20f980960a32d1.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/modal.self-c5a9d3dcfeee46976a2297f21454e667e25b55568a576295fa456c25dc2e6da7.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/materialbox.self-806b88f7429987c13862e84ba948ed8fc2d3500bb8a8d07f95c875d3718fb109.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/dropdown.self-139eb5e39a9e6a0fdda1781bc8e397d355006eec30145614b35f626590303e86.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/parallax.self-1f02a9ea7d247347b376032b1a4d8651c2decd4d3346b9f740f536b16dd5b801.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/tooltip.self-0a88afb5932c1cfed4ff948897b0984fa50c9aa648786098568b57924fbee6a7.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/tabs.self-378b7d22045d9862814f4d7e9bc53f9fe7e4645955cbc6370e3601d1dddcfade.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/waves.self-ed24cac84d0f66808ff978810735b871f814c2bcf592cf9ccdf6b2bcdf8f5ba7.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/toasts.self-91859a18d500640df9116a39e9ce6187c9c41e643fb7cbba84d8f8f3f4b59d29.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/sideNav.self-8b2e60a863b1c3a3237184368e324c49ac2dbc81adf6c1f77ff8eeb740da108a.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/scrollspy.self-f96ac4ee16300b3cf0f07cedea0939bda2041c2904e9486891100d2e95c71d89.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/forms.self-ba1803824f0ac0ca65402822dda01d73089f8a42fc1c980f5c2787ebd64f8b8d.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/slider.self-b8512b10d3b81daf5d087a944ece5992a55f1ccc1dc6bc997eb9a49de8dbb8ca.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/cards.self-f16edb4fd2c25228dc8fdd9b83ce1b7e0bb7c0dafaea90e749c63995392ff4d0.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/pushpin.self-ed1452403a25a5ad10793d1cf1fe872ae5291ca66546e25a89f4d89ecc8bc37a.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/chips.self-6dbc7b461eb0a16950fda4c8985e0b2571981e4243d181765a9d4b175c2d7765.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/buttons.self-8509e11f3494625ed059bc2ae0e0970a07ebc12863e54e5be448d2f166469525.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/transitions.self-8504ce5ff296c8c8119fbf80bd1c22cf7c4069479608e79d45e890305ce083e2.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/scrollFire.self-d00940e53d10b9e85a5b6dc3ea869da2f0bc923dcbcfddf0ceaf7a20a62d54a0.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/date_picker/picker.self-fc661e33adcdc2b1c3bc7940ab322786024c014ec63b434566267ff5ff8318bc.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/date_picker/picker.date.self-b1d00a3d65b3b4a328888ecf08c2d46e913699bfb367858b4141689c6942f4c7.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/character_counter.self-6e7c4e013fcd539576ed3165fbde0c4db9adc550244fea91cde05a0ff94a5028.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/date_picker/picker.time.self-17ff79f6d082457a5e8e2662a6b6bc3083962460f4e321b7b2abc32d198ca704.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/carousel.self-a6cffcb3ca5e4efe5b9ee21905ac5a0a70e725463bd592e3fd7644aeda9e3474.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/tapTarget.self-73dee84356337136b58eb5418ace519ab2e59464dbdff2dc9210023b82a5eb10.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize-sprockets.self-b9b07dd4e7718454476f04edeb935022ae4f4d90934ab7ce913ff20c8baeb399.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/jquery.easing.1.4.self-1861f2a13696f306fd66ca3f06690cee8dbe0043cf4d5766f2a46207f1e66093.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/materialize/extras/nouislider.self-78ebbaf6d44ed2485fe963a4fa2106982e6bb4650f5d5ad8f7ec8cce36f98033.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/channels/messages.self-c156f224c14ee4b1b434d6d0bbe8f7633cd4b0f61bbd58fd234825d6529c6001.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/channels/chatrooms.self-e4713229ed841d924fbbf76987425a78e4a581fe1f8301b6d1cb3895802dd9b7.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/application.self-7353a0c11472599bd430b69b866c2790da177f5f94989434262d2c9930ede3d9.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/assets/chatrooms.self-ec69bbbf8b3636baa8311f15971f81cd4137c1d1697d54f91558606a230ebe51.js?body=1" for 127.0.0.1 at 2017-09-03 14:40:33 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:40:34 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:34 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:34 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:34 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:40:43 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:43 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:43 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:43 +0500
+Started GET "/" for 127.0.0.1 at 2017-09-03 14:40:49 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (10.7ms)
+  Rendered application/_favicon.html.erb (5.0ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 153ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:40:53 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (3.0ms)
+  Rendered application/_favicon.html.erb (7.3ms)
+  Rendered layouts/_navbar_email_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 189ms (Views: 185.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:40:56 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:56 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:56 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:40:56 +0500
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-03 14:41:00 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [108 times] (48.6ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.4ms)
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:41:04 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:04 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:04 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:04 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:41:13 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:13 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:13 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:13 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:41:22 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:22 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:22 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:22 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:41:33 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:33 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:33 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:33 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:41:44 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:44 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:44 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:44 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:41:55 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:55 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:55 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:41:55 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:42:07 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:07 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:07 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:07 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:42:20 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:20 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:20 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:20 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:42:32 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:32 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:32 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:32 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:42:46 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:46 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:46 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:46 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:42:59 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:59 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:59 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:42:59 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:43:13 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:13 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:13 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:13 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:43:27 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:27 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:27 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:27 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:43:42 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:42 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:42 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:42 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:43:56 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:56 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:56 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:43:56 +0500
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:44:05 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (1.8ms)
+  Rendered application/_favicon.html.erb (5.7ms)
+  Rendered layouts/_navbar_email_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 116ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:44:06 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:06 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:06 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:06 +0500
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-03 14:44:07 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [108 times] (37.9ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.2ms)
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:44:09 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (2.2ms)
+  Rendered application/_favicon.html.erb (5.1ms)
+  Rendered layouts/_navbar_email_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 98ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-503f0b8d1f38e48a8c1efafe640d8bc9a712946212d529cd61e704f573660478.css?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/initial.self-a93c872995e42c5b8c04edb56629dfeaa7ef6909e809f29f3a42c26b73a91f85.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/animation.self-544532c6613fb875a241de39ee1caa7e5a8828babe81173346df1b035a1c5cc2.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/velocity.min.self-88e63c17d79a0a43060e1e5893cf44e912a8554511b7c812d8bd5874cf962bfc.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/global.self-d930e5295ff5eeec691c7b50e01531d0b8833d4c783185934a7c3e0338bb829c.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/jquery.hammer.self-058ad89096dc19ff0acdee608d6b76da125f2c2eac2b534f9ee1129445d2dee0.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/hammer.min.self-e34aebdc152f24d554cde579fd08f6bc8989093a40be08daac3b8ab73f7476ab.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/collapsible.self-fdf41d8be8baa05abaa6e46fb5bb5299ad64008e59e531fada20f980960a32d1.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/modal.self-c5a9d3dcfeee46976a2297f21454e667e25b55568a576295fa456c25dc2e6da7.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/dropdown.self-139eb5e39a9e6a0fdda1781bc8e397d355006eec30145614b35f626590303e86.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/materialbox.self-806b88f7429987c13862e84ba948ed8fc2d3500bb8a8d07f95c875d3718fb109.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/parallax.self-1f02a9ea7d247347b376032b1a4d8651c2decd4d3346b9f740f536b16dd5b801.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/tooltip.self-0a88afb5932c1cfed4ff948897b0984fa50c9aa648786098568b57924fbee6a7.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/tabs.self-378b7d22045d9862814f4d7e9bc53f9fe7e4645955cbc6370e3601d1dddcfade.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/waves.self-ed24cac84d0f66808ff978810735b871f814c2bcf592cf9ccdf6b2bcdf8f5ba7.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/toasts.self-91859a18d500640df9116a39e9ce6187c9c41e643fb7cbba84d8f8f3f4b59d29.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/sideNav.self-8b2e60a863b1c3a3237184368e324c49ac2dbc81adf6c1f77ff8eeb740da108a.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/scrollspy.self-f96ac4ee16300b3cf0f07cedea0939bda2041c2904e9486891100d2e95c71d89.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/slider.self-b8512b10d3b81daf5d087a944ece5992a55f1ccc1dc6bc997eb9a49de8dbb8ca.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/forms.self-ba1803824f0ac0ca65402822dda01d73089f8a42fc1c980f5c2787ebd64f8b8d.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/jquery.easing.1.4.self-1861f2a13696f306fd66ca3f06690cee8dbe0043cf4d5766f2a46207f1e66093.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/cards.self-f16edb4fd2c25228dc8fdd9b83ce1b7e0bb7c0dafaea90e749c63995392ff4d0.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/chips.self-6dbc7b461eb0a16950fda4c8985e0b2571981e4243d181765a9d4b175c2d7765.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/buttons.self-8509e11f3494625ed059bc2ae0e0970a07ebc12863e54e5be448d2f166469525.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/scrollFire.self-d00940e53d10b9e85a5b6dc3ea869da2f0bc923dcbcfddf0ceaf7a20a62d54a0.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/transitions.self-8504ce5ff296c8c8119fbf80bd1c22cf7c4069479608e79d45e890305ce083e2.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/date_picker/picker.self-fc661e33adcdc2b1c3bc7940ab322786024c014ec63b434566267ff5ff8318bc.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/date_picker/picker.date.self-b1d00a3d65b3b4a328888ecf08c2d46e913699bfb367858b4141689c6942f4c7.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/date_picker/picker.time.self-17ff79f6d082457a5e8e2662a6b6bc3083962460f4e321b7b2abc32d198ca704.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/character_counter.self-6e7c4e013fcd539576ed3165fbde0c4db9adc550244fea91cde05a0ff94a5028.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/carousel.self-a6cffcb3ca5e4efe5b9ee21905ac5a0a70e725463bd592e3fd7644aeda9e3474.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/tapTarget.self-73dee84356337136b58eb5418ace519ab2e59464dbdff2dc9210023b82a5eb10.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize-sprockets.self-b9b07dd4e7718454476f04edeb935022ae4f4d90934ab7ce913ff20c8baeb399.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/extras/nouislider.self-78ebbaf6d44ed2485fe963a4fa2106982e6bb4650f5d5ad8f7ec8cce36f98033.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/channels/chatrooms.self-e4713229ed841d924fbbf76987425a78e4a581fe1f8301b6d1cb3895802dd9b7.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/channels/messages.self-c156f224c14ee4b1b434d6d0bbe8f7633cd4b0f61bbd58fd234825d6529c6001.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/application.self-7353a0c11472599bd430b69b866c2790da177f5f94989434262d2c9930ede3d9.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/chatrooms.self-ec69bbbf8b3636baa8311f15971f81cd4137c1d1697d54f91558606a230ebe51.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/assets/materialize/pushpin.self-ed1452403a25a5ad10793d1cf1fe872ae5291ca66546e25a89f4d89ecc8bc37a.js?body=1" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:10 +0500
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:44:20 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (1.9ms)
+  Rendered application/_favicon.html.erb (6.4ms)
+  Rendered layouts/_navbar_email_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:44:20 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:20 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:20 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:20 +0500
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-03 14:44:21 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [108 times] (44.0ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.9ms)
+Started GET "/contact" for 127.0.0.1 at 2017-09-03 14:44:27 +0500
+Processing by EmailMessagesController#new as HTML
+  Rendering email_messages/new.html.erb within layouts/email_messages
+  Rendered email_messages/new.html.erb within layouts/email_messages (2.9ms)
+  Rendered application/_favicon.html.erb (5.1ms)
+  Rendered layouts/_navbar_email_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 109ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:44:28 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:28 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:28 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:28 +0500
+Started GET "/serviceworker.js" for 127.0.0.1 at 2017-09-03 14:44:29 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [108 times] (52.6ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/taharushain/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.2ms)
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:44:37 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:37 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:37 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:37 +0500
+Started GET "/" for 127.0.0.1 at 2017-09-03 14:44:41 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.3ms)
+  Rendered application/_favicon.html.erb (9.2ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 191ms (Views: 189.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-03 14:44:48 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+  Rendered application/_favicon.html.erb (6.6ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 152ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-09-03 14:44:49 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:49 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:49 +0500
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-09-03 14:44:49 +0500

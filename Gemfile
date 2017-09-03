@@ -26,6 +26,7 @@ gem 'rails_real_favicon'
 gem 'aws-sdk'
 # gem 'serviceworker-rails'
 gem 'devise_security_extension'
+gem "recaptcha", require: "recaptcha/rails"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
