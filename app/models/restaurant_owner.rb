@@ -3,7 +3,7 @@ class RestaurantOwner < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
 	  :recoverable, :rememberable, :trackable, :validatable,
-	  :confirmable, :lockable
+	  :lockable
 
   validates :full_name, presence: true, length: { minimum: 4, maximum: 35 }
   validates :contact, presence: true, length: { minimum: 4, maximum: 16 }

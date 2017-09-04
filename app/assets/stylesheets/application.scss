@@ -9,7 +9,7 @@
 @import "materialize/components/color";
 $primary-color: color("blue-grey", "darken-4") !default;
 $secondary-color: color("blue-grey", "darken-2") !default;
-$accent-color: #000000 !default;
+$accent-color: #111111 !default;
 @import 'materialize';
 
 
@@ -71,3 +71,86 @@ main {
 // .snackbar.notice {
 // 	background-color: green;
 // }
+
+
+.fixed-announcement {
+	position: relative;
+	height: 48px;
+	width: 100%;
+	z-index: 999;
+}
+.fixed-announcement .announcement {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background-color: $secondary-color;
+}
+.fixed-announcement .announcement .container {
+	color: #fff;
+	padding: 14px 0;
+	font-size: .9rem;
+}
+.fixed-announcement .announcement .container a {
+	color: #32b9fb;
+}
+a {
+	text-decoration: none;
+}
+a.button-collapse.top-nav {
+	position: absolute;
+	text-align: center;
+	height: 48px;
+	width: 48px;
+	left: 7.5%;
+	top: 55px;
+	float: none;
+	margin-left: -8px;
+	color: $primary-color;
+	font-size: 36px;
+	z-index: 2;
+}
+
+ul.side-nav.fixed:hover {
+    overflow-y: auto;
+}
+
+ul.side-nav.fixed {
+	overflow: hidden;
+}
+
+.owner-padding {
+	padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+	.owner-padding {
+		padding-left: 0;
+	}
+}
+
+.dashboard-logo{
+	margin-bottom: 16px;
+}
+
+.custom-dark-color{
+	background-color: #1d1e2e;
+	color: white;
+}
+
+#index-banner {
+    background-color: #ee6e73;
+}
+
+#index-banner .header {
+    color: #FFF;
+}
+#index-banner h1 {
+    margin-top: 16px;
+}
+#index-banner h4 {
+    margin-bottom: 40px;
+}
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}

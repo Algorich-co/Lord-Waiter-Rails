@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= t('app_name')%></title>
+	<%= csrf_meta_tags %>
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+	<%= render 'application/favicon' %>
+	
+</head>
+
+<body>
+	<header>
+		<%= render('layouts/navbar_restaurant_owners_out') %>
+	</header>
+
+	<main>
+		<%= yield %>
+	</main>s
+
+</body>
+</html>
+
+

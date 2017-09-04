@@ -1,5 +1,5 @@
 class RestaurantOwners::SessionsController < Devise::SessionsController
-  layout 'restaurant_owners'
+  layout 'restaurant_owners_out'
   prepend_before_action :check_captcha, only: [:create] # Change this to be any actions you want to protect.
 
   private

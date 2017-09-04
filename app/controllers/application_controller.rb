@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     if resource.class == RestaurantManager
       restaurant_managers_index_path  
+    elsif resource.class == RestaurantOwner
+      restaurant_owners_index_path
     else
       root_path
     end
@@ -15,6 +17,8 @@ class ApplicationController < ActionController::Base
   def after_sign_out_path_for(resource_or_scope)
     if resource_or_scope == :restaurant_manager
       new_restaurant_manager_session_path
+    elsif resource_or_scope == :restaurant_owner
+      new_restaurant_owner_session_path
     else
       root_path
     end

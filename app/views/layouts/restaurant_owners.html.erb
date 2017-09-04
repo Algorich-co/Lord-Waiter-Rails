@@ -11,10 +11,16 @@
 </head>
 
 <body>
-	<%= render('layouts/navbar_restaurant_managers') %>
 
-	<%= yield %>
+	<header class="owner-padding">
+		<%= render('layouts/navbar_restaurant_owners') %>
+	</header>
 
+	<main class="owner-padding" > 
+				<%= yield %>
+	</main>
+
+	<footer class="owner-padding"></footer>
 
 </body>
 </html>

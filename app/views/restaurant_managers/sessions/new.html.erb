@@ -2,11 +2,8 @@
 
     <h3>Manager - Login</h3>
 
-    <div class="row">
-      <% flash.each do |name, msg| %>
-      <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
-    </div>
+    <%= render('layouts/flash') %>    
+
 
     <div class="row">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>

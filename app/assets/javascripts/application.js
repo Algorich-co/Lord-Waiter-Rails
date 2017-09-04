@@ -23,8 +23,12 @@
 $( document ).on('turbolinks:load', function() {
 	$('.materialboxed').materialbox();
 	$('.carousel').carousel();
-	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
+	$('.collapsible').collapsible();
+	$('.button-collapse').sideNav({
+      draggable: true
+    });
+    
 });
 
 /*! WOW - v1.0.3 - 2015-01-14

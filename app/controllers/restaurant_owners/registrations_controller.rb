@@ -1,5 +1,5 @@
 class RestaurantOwners::RegistrationsController < Devise::RegistrationsController
-  layout 'restaurant_owners'
+  layout 'restaurant_owners_out'
   prepend_before_action :check_captcha, only: [:create, :update]
 
   private
