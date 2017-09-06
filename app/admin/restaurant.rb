@@ -53,11 +53,11 @@ ActiveAdmin.register Restaurant do
 
 
 
-  panel "Categories" do
-    table_for(restaurant.categories) do
+  panel "Food Items" do
+    table_for(restaurant.food_items) do
 
-      column :name do |cat|
-        link_to("#{cat.name}", admin_restaurant_category_path(restaurant, cat))
+      column :title do |cat|
+        link_to("#{cat.title}", admin_restaurant_food_item_path(restaurant, cat))
       end
 
 
@@ -67,7 +67,7 @@ ActiveAdmin.register Restaurant do
 
 
       tr class: "action_items" do
-        td link_to("New Category", new_admin_restaurant_category_path(restaurant),
+        td link_to("New Item", new_admin_restaurant_food_item_path(restaurant),
          class: :button)
         end
 

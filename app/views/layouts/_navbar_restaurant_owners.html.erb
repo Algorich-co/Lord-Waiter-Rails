@@ -1,18 +1,42 @@
 <div class="fixed-announcement">
   <div class="announcement">
-    <div class="container center-align">Your restaurant is not available to public, <a href="#"> Subscribe</a> and take your business to the next level!</div>
+    <div class="container">Your restaurant is not available to public, <a href=""> Subscribe</a> and take your business to the next level!</div>
   </div>
 </div>
 
-<div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>
+<div class="container"><a href="" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>
 
 
-<ul id="nav-mobile" class="side-nav fixed"    style="transform: translateX(0%);">
-  <li><div class="user-view  custom-dark-color center-align">
+<ul id="nav-mobile" class="secondary_background side-nav fixed" style="transform: translateX(0%);">
+  <li><div class="user-view primary_background center-align">
     <a href=""><img class="dashboard-logo" src="<%= asset_path('dashboard_logo.png') %>"></a>
   </div></li>
-  <li class="bold"><a href="#" class="waves-effect waves-red ">About</a></li>
-  <li class="bold"><a href="#" class="waves-effect waves-red " >Getting Started</a></li>
-  <li class="bold"><a href="#" class="waves-effect waves-red  ">Mobile</a></li>
-  <li class="bold"><a href="#" class="waves-effect waves-red ">Showcase</a></li>
+
+
+
+
+  <li class="bold"><a href="" class="white-text waves-effect waves-blue ">Home</a></li>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li>
+        <a class="white-text collapsible-header">Restaurant<i class="material-icons right white-text">arrow_drop_down</i></a>
+        <div class="collapsible-body">
+          <ul class="blue-grey darken-1">
+            <li><a class="white-text" href="<%= restaurant_owners_details_path %>">Details</a></li>
+            <li><a class="white-text" href="<%= restaurant_owners_restaurants_path %>">Branches</a></li>
+            <li><a class="white-text" href="#">Products</a></li>
+            <li><a class="white-text" href="#">Tables</a></li>
+            <li><a class="white-text" href="#">Deals</a></li>
+            <li><a class="white-text" href="#">Managers</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li class=""><a href="" class="white-text waves-effect waves-red">Customer Feeback</a></li>
+  <li class="bold"><a href="" class="white-text waves-effect waves-red">Customers</a></li>
+  <li class="bold"><a href="" class="white-text waves-effect waves-red">Promotions</a></li>
+
+  
+
 </ul>

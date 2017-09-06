@@ -1,0 +1,43 @@
+<div class="row">
+
+  <%= form_for :restaurant, url: restaurant_owners_restaurants_path do |f| %>
+
+  <div class="col s12">
+    <div class="col s12 m4 l4 offset-m4 offset-l4">
+      <img src="<%= @restaurant.image.url(:medium) %>" class="materialboxed responsive-img", id="image_display_restaurant_form" />
+    </div>
+  </div>
+  
+
+  <div class="file-field input-field col s12 m6 l6 offset-m3 offset-l3">
+    <div class="btn">
+      <span >Image</span>
+      <%= f.file_field :image, id: "image_select_restaurant_form" %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.text_field :name, class: "validate #{error_class(@restaurant, :name)}" %>
+    <%= f.label :name, "data-error" => show_errors(@restaurant, :name) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.text_field :contact, class: "validate #{error_class(@restaurant, :name)}"%>
+    <%= f.label :contact, "data-error" => show_errors(@restaurant, :name) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.text_field :address, class: "validate #{error_class(@restaurant, :name)}"%>
+    <%= f.label :address, "data-error" => show_errors(@restaurant, :name) %>
+  </div>
+
+
+  <div class="row actions col s12">
+    <%= f.submit "Save", class: "waves-effect waves-light btn" %>
+  </div>
+  <% end %>
+
+</div>

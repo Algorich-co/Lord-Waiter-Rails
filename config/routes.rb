@@ -34,7 +34,13 @@ Rails.application.routes.draw do
   patch 'restaurant_managers/order_checkout/:order_id' => 'restaurant_managers/dashboard#order_checkout', :as => 'restaurant_managers_checkout' 
   patch 'restaurant_managers/receive_waiter_call/:waiter_call_id' => 'restaurant_managers/dashboard#receive_waiter_call', :as => 'restaurant_managers_receive_waiter_call' 
 
-  get 'restaurant_owner', to: 'restaurant_owners/dashboard#index', :as => 'restaurant_owners_index' 
+
+  namespace :restaurant_owners do 
+    get 'home', to: 'dashboard#index', :as => 'index' 
+    get 'profile', to: 'dashboard#details', :as => 'details'
+    resources :restaurants
+
+  end
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do

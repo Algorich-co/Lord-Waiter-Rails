@@ -1,0 +1,33 @@
+
+<div class="section" id="index-banner">
+	<div class="container">
+		<h1 class="header center">Branches</h1>
+		<div class="row center">
+			<a href="<%= new_restaurant_owners_restaurant_path %>" class="btn-large waves-effect waves-light">Create new branch</a>
+		</div>
+	</div>
+</div>
+
+
+<% if @restaurants.any? %>
+<section class="section">
+	<div class="container">
+		<div class="collection">
+			<% @restaurants.each do |restaurant| %>
+			<%= link_to "#{restaurant.name}", restaurant_owners_restaurant_path(restaurant), :class => "collection-item waves-effect waves-light waves-red" %>
+			<% end %>
+		</div>
+	</div>
+</section>
+<% else %>
+<div class="holder secondary_background">
+
+	<section class="section valign-wrapper no-content-created">
+		<div class="container">
+			<h5 class="center-align">
+				Looks like you havn't created a branch, create one by clicking the above button.
+			</h5>
+		</div>
+	</section>
+</div>
+<% end %>	

@@ -1,5 +1,4 @@
 ActiveAdmin.register Category do
-  belongs_to :restaurant
 
   permit_params :name, :image
 
@@ -7,7 +6,6 @@ ActiveAdmin.register Category do
   index do
     id_column
     column :name
-    column :restaurant
     actions
   end
 
@@ -24,7 +22,6 @@ ActiveAdmin.register Category do
   show do |ad|
     attributes_table do
       row :name
-      row :restaurant
       row :thumbnail do
         image_tag(ad.image.url(:thumb))
       end

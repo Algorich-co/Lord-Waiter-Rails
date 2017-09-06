@@ -26,9 +26,23 @@ $( document ).on('turbolinks:load', function() {
 	$('.parallax').parallax();
 	$('.collapsible').collapsible();
 	$('.button-collapse').sideNav({
-      draggable: true
-    });
-    
+		draggable: true
+	});
+
+	var preview = $("#image_display_restaurant_form");
+
+	$("#image_select_restaurant_form").change(function(event){
+		var input = $(event.currentTarget);
+		var file = input[0].files[0];
+		var reader = new FileReader();
+		reader.onload = function(e){
+			image_base64 = e.target.result;
+			preview.attr("src", image_base64);
+		};
+		reader.readAsDataURL(file);
+	});
+
+
 });
 
 /*! WOW - v1.0.3 - 2015-01-14

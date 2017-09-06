@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170903115159) do
+ActiveRecord::Schema.define(version: 20170904164237) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,8 +54,6 @@ ActiveRecord::Schema.define(version: 20170903115159) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "restaurant_id"
-    t.index ["restaurant_id"], name: "index_categories_on_restaurant_id", using: :btree
   end
 
   create_table "chatrooms", force: :cascade do |t|
@@ -159,19 +157,19 @@ ActiveRecord::Schema.define(version: 20170903115159) do
   end
 
   create_table "restaurant_owners", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                  default: "",    null: false
+    t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-    t.integer  "failed_attempts",        default: 0,  null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.integer  "failed_attempts",        default: 0,     null: false
     t.string   "unlock_token"
     t.datetime "locked_at"
     t.string   "full_name"
@@ -184,6 +182,10 @@ ActiveRecord::Schema.define(version: 20170903115159) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
+    t.decimal  "tax",                    default: "0.0"
+    t.boolean  "tax_available",          default: false
+    t.decimal  "discount",               default: "0.0"
+    t.boolean  "discount_available",     default: false
     t.index ["confirmation_token"], name: "index_restaurant_owners_on_confirmation_token", unique: true, using: :btree
     t.index ["email"], name: "index_restaurant_owners_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_restaurant_owners_on_reset_password_token", unique: true, using: :btree
@@ -194,17 +196,15 @@ ActiveRecord::Schema.define(version: 20170903115159) do
     t.string   "name"
     t.text     "address"
     t.string   "contact"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.decimal  "discount",           default: "0.0"
-    t.boolean  "discount_available", default: false
-    t.decimal  "tax",                default: "0.0"
-    t.boolean  "tax_available",      default: false
-    t.boolean  "active",             default: false
+    t.boolean  "active",              default: false
+    t.integer  "restaurant_owner_id"
+    t.index ["restaurant_owner_id"], name: "index_restaurants_on_restaurant_owner_id", using: :btree
   end
 
   create_table "rpush_apps", force: :cascade do |t|
@@ -295,7 +295,6 @@ ActiveRecord::Schema.define(version: 20170903115159) do
     t.index ["table_id"], name: "index_waiter_calls_on_table_id", using: :btree
   end
 
-  add_foreign_key "categories", "restaurants"
   add_foreign_key "food_items", "categories"
   add_foreign_key "food_items", "restaurants"
   add_foreign_key "line_items", "food_items"
@@ -306,6 +305,7 @@ ActiveRecord::Schema.define(version: 20170903115159) do
   add_foreign_key "orders", "restaurants"
   add_foreign_key "orders", "tables"
   add_foreign_key "restaurant_managers", "restaurants"
+  add_foreign_key "restaurants", "restaurant_owners"
   add_foreign_key "tables", "restaurants"
   add_foreign_key "waiter_calls", "clients"
   add_foreign_key "waiter_calls", "tables"

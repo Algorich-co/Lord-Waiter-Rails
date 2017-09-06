@@ -1,0 +1,38 @@
+<div class="section" id="index-banner">
+	<div class="container">
+		<h3 class="header center"><%= @restaurant.name %></h3>
+		<div class="row center">
+			<%= link_to ("" + content_tag(:i, "edit", :class => "material-icons left")).html_safe, edit_restaurant_owners_restaurant_path(@restaurant), :class => "btn-floating btn-large waves-effect waves-light" %>
+		</div>
+	</div>
+</div>
+
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="">
+
+				<%= image_tag(@restaurant.image.url(:medium), class: "materialboxed col s12 m6 l6") %>
+
+			</div>
+
+			<div class="col s12 m6 l6">
+				<h5 class="my-pink-text">Name:</h5>
+				<p><%= @restaurant.name %></p>	
+
+				<h5 class="my-pink-text">Address:</h5>
+				<p><%= @restaurant.address %></p>
+
+
+				<div class="chip">
+					<img src="<%= @restaurant.image.url(:thumb) %>" alt="<%= @restaurant.contact %>">
+					<%= @restaurant.contact %>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>		
+</div>
+</section>

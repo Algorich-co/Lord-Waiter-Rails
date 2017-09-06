@@ -1,0 +1,30 @@
+<div class="section" id="index-banner">
+	<div class="container">
+		<div class="row center">
+			<div class="col s12">
+				<%= image_tag(current_restaurant_owner.image.url(:medium), class: "circle responsive-img" )%>
+			</div>
+			<div class="col s12">
+				<a href="<%= new_restaurant_owners_restaurant_path %>" class="btn waves-effect waves-light">Change Picture</a> 
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section class="section">
+	<div class="container">
+		<div class="row center">
+			<div class="col s12">
+				<p class="heading"><span class="my-pink-text">Handler: </span> <%= current_restaurant_owner.full_name%></p>
+			</div>
+			
+			<div class="col s12">
+				<p class="heading"><span class="my-pink-text">Company: </span> <%= current_restaurant_owner.full_name%></p>
+			</div>
+			<div class="col s12">
+				<p class="heading"><span class="my-pink-text">Contact: </span> <%= current_restaurant_owner.contact%></p>
+			</div>
+		</div>
+	</div>
+</section>

@@ -27,6 +27,7 @@ gem 'aws-sdk'
 # gem 'serviceworker-rails'
 gem 'devise_security_extension'
 gem "recaptcha", require: "recaptcha/rails"
+gem 'nokogiri'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -10,20 +10,37 @@
         <li>
           <%= link_to('Contact', new_email_message_path, class: "blue-grey-text text-darken-2") %> 
         </li>
+        <% if restaurant_owner_signed_in? %>
+        <li>
+        <%= link_to('Logout', destroy_restaurant_owner_session_path, method: :delete, class: "blue-grey-text text-darken-2") %>        
+        </li>
+        <% else %>
+        <li>
+          <%= link_to('Login', new_restaurant_owner_session_path, class: "blue-grey-text text-darken-2")  %>  
+        </li>
+        <li>
+          <%= link_to('Register', new_restaurant_owner_registration_path, class: "blue-grey-text text-darken-2")  %>  
+        </li>
+        <% end %>
 
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="#features">Features</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li>
-          <%= link_to('Contact', new_email_message_path, class: "blue-grey-text text-darken-2") %> 
-        </li>         <% if restaurant_manager_signed_in? %>
-        <li class="waves-effect waves-light">
-          <%= link_to('Logout', destroy_restaurant_manager_session_path, method: :delete, class: "blue-grey-text text-darken-2") %>        
+
+          <%= link_to('Contact', new_email_message_path) %> 
+        </li>         
+        <% if restaurant_owner_signed_in? %>
+        <li>
+          <%= link_to('Logout', destroy_restaurant_owner_session_path, method: :delete) %>        
         </li>
         <% else %>
-        <li class="waves-effect waves-light">
-          <%= link_to('Login', new_restaurant_manager_session_path, class: "blue-grey-text text-darken-2")  %>  
+        <li>
+          <%= link_to('Login', new_restaurant_owner_session_path)  %>  
+        </li>
+        <li>
+          <%= link_to('Register', new_restaurant_owner_registration_path)  %>  
         </li>
         <% end %>
       </ul>

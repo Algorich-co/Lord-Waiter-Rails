@@ -6,8 +6,8 @@
     <%= devise_error_messages! %>
 
     <div class="field input-field col s12">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
+      <%= f.email_field :email, autofocus: true, class: "validate #{error_class(resource, :email)}" %>
+      <%= f.label :email, "data-error" => show_errors(resource, :email) %>
     </div>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -15,8 +15,9 @@
     <% end %>
 
     <div class="field input-field col s12">
-      <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-      <%= f.password_field :password, autocomplete: "off" %>
+      
+      <%= f.password_field :password, autocomplete: "off", class: "validate #{error_class(resource, :password)}" %>
+      <%= f.label :password, "data-error" => show_errors(resource, :password) %> <i>(leave blank if you don't want to change it)</i>
       <% if @minimum_password_length %>
       <br />
       <em><%= @minimum_password_length %> characters minimum</em>
@@ -24,13 +25,14 @@
     </div>
 
     <div class="field input-field col s12">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      
+      <%= f.password_field :password_confirmation, autocomplete: "off", class: "validate #{error_class(resource, :password_confirmation)}" %>
+      <%= f.label :password_confirmation, "data-error" => show_errors(resource, :password_confirmation) %>
     </div>
 
     <div class="field input-field col s12">
-      <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-      <%= f.password_field :current_password, autocomplete: "off" %>
+      <%= f.password_field :current_password, autocomplete: "off", class: "validate #{error_class(resource, :current_password)}" %>
+      <%= f.label :current_password, "data-error" => show_errors(resource, :current_password) %> <i>(we need your current password to confirm your changes)</i>
     </div>
 
     <div class="field input-field col s12">

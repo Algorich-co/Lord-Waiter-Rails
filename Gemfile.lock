@@ -751,6 +751,7 @@ DEPENDENCIES
   materialize-sass
   mini_magick
   net-http-persistent (< 3)
+  nokogiri
   paperclip (~> 5.1)
   pg
   puma

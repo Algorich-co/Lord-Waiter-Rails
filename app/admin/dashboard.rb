@@ -30,26 +30,7 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
-    columns do
-        column do
-                panel "Recent Categories" do
-                  ul do
-                    Category.order("created_at desc").limit(5).map do |category|
-                      li link_to(category.name, admin_restaurant_category_path(category.restaurant, category))
-                    end
-                  end
-                end
-         end
-         column do
-                panel "Recent Food Items" do
-                  ul do
-                    FoodItem.order("created_at desc").limit(5).map do |foodItem|
-                      li link_to(foodItem.title, admin_category_food_item_path(foodItem.category, foodItem))
-                    end
-                  end
-                end
-         end
-    end
+
 
 
 

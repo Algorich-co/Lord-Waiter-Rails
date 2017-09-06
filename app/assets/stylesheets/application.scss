@@ -36,6 +36,10 @@ body {
 }
 
 
+.primary_background{
+	background: $primary-color;
+	color: white;
+}
 
 .secondary_background{
 	background: $secondary-color;
@@ -55,6 +59,14 @@ body {
 
 .parallax-container {
 	height: 100vh;
+}
+
+.holder{
+	min-height: 100vh;
+}
+
+.no-content-created{
+	height: 300px;
 }
 
 main {
@@ -105,13 +117,13 @@ a.button-collapse.top-nav {
 	top: 55px;
 	float: none;
 	margin-left: -8px;
-	color: $primary-color;
+	color: #fff;
 	font-size: 36px;
 	z-index: 2;
 }
 
 ul.side-nav.fixed:hover {
-    overflow-y: auto;
+	overflow-y: auto;
 }
 
 ul.side-nav.fixed {
@@ -122,11 +134,19 @@ ul.side-nav.fixed {
 	padding-left: 300px;
 }
 
+a.button-collapse.top-nav i {
+	font-size: 32px;
+}
+
 @media only screen and (max-width : 992px) {
 	.owner-padding {
 		padding-left: 0;
 	}
+	#index-banner h1 {
+		margin-top: 56px;
+	}
 }
+
 
 .dashboard-logo{
 	margin-bottom: 16px;
@@ -137,20 +157,40 @@ ul.side-nav.fixed {
 	color: white;
 }
 
+.my-pink-text{
+	color: #ee6e73;
+}
+
 #index-banner {
-    background-color: #ee6e73;
+	background-color: #ee6e73;
+}
+#index-banner .container {
+	position: relative;
 }
 
 #index-banner .header {
-    color: #FFF;
+	color: #FFF;
 }
-#index-banner h1 {
-    margin-top: 16px;
-}
+
 #index-banner h4 {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 .header {
-    color: #ee6e73;
-    font-weight: 300;
+	color: #ee6e73;
+	font-weight: 300;
+}
+
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header{
+	margin-left: 32px !important;
+	padding-left: 0px !important;
+}
+.side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
+	margin-left: 20px;
+}
+
+.heading{
+	font-size: 1.50rem;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+    font-weight: 400;
 }
