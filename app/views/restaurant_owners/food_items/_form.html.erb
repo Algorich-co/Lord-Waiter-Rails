@@ -1,0 +1,47 @@
+  <div class="col s12">
+    <div class="col s12 m4 l4 offset-m4 offset-l4">
+      <img src="<%= @food_item.image.url(:medium) %>" class="materialboxed responsive-img", id="image_display_restaurant_form" />
+    </div>
+  </div>
+  
+
+  <div class="file-field input-field col s12 m6 l6 offset-m3 offset-l3">
+    <div class="btn">
+      <span >Image</span>
+      <%= f.file_field :image, id: "image_select_restaurant_form" %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.text_field :title, class: "validate #{error_class(@food_item, :title)}" %>
+    <%= f.label :title, "data-error" => show_errors(@food_item, :title) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.number_field :price, class: "validate #{error_class(@food_item, :price)}"%>
+    <%= f.label :price, "data-error" => show_errors(@food_item, :price) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.select :restaurant_id, current_restaurant_owner.restaurants.all.map {|p| [ p.name, p.id ] }, { :include_blank => "Select Restaurant" } %>
+    <%= f.label :restaurant_id, "data-error" => show_errors(@food_item, :restaurant_id) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.select :category_id, Category.all.map {|p| [ p.name, p.id ] }, { :include_blank => "Select Category" } %>
+    <%= f.label :category_id, "data-error" => show_errors(@food_item, :category_id) %>
+  </div>
+
+  <div class="row field col s12">
+    <%= f.check_box :featured, class: "validate #{error_class(@food_item, :featured)}"%>
+    <%= f.label :featured, "data-error" => show_errors(@food_item, :featured) %>
+  </div>
+
+
+
+  <div class="row actions col s12">
+    <%= f.submit "Save", class: "waves-effect waves-light btn" %>
+  </div>

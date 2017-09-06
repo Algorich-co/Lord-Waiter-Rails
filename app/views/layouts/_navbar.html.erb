@@ -12,6 +12,9 @@
         </li>
         <% if restaurant_owner_signed_in? %>
         <li>
+        <%= link_to('Home', restaurant_owners_index_path, class: "blue-grey-text text-darken-2") %>        
+        </li>
+        <li>
         <%= link_to('Logout', destroy_restaurant_owner_session_path, method: :delete, class: "blue-grey-text text-darken-2") %>        
         </li>
         <% else %>

@@ -12,7 +12,7 @@
 <% if @restaurants.any? %>
 <section class="section">
 	<div class="container">
-		<div class="collection">
+		<div class="collection z-depth-3">
 			<% @restaurants.each do |restaurant| %>
 			<%= link_to "#{restaurant.name}", restaurant_owners_restaurant_path(restaurant), :class => "collection-item waves-effect waves-light waves-red" %>
 			<% end %>

@@ -39,6 +39,7 @@ Rails.application.routes.draw do
     get 'home', to: 'dashboard#index', :as => 'index' 
     get 'profile', to: 'dashboard#details', :as => 'details'
     resources :restaurants
+    resources :food_items
 
   end
 

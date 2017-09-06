@@ -16,7 +16,7 @@ class RestaurantOwners::RestaurantsController < ApplicationController
 		@restaurant = current_restaurant_owner.restaurants.build(restaurant_params)
 		if @restaurant.save
 			flash[:success] = "Your branch has been created!"
-			redirect_to restaurant_owners_restaurant_owners_index_path
+			redirect_to restaurant_owners_restaurants_path
 		else
 			flash.now[:alert] = "Your new branch couldn't be created!  Please check the form."
 			render :new
@@ -32,9 +32,9 @@ class RestaurantOwners::RestaurantsController < ApplicationController
 	end
 
 	def update
-		if @restaurant.update(post_params)
+		if @restaurant.update(restaurant_params)
 			flash[:success] = "Branch updated."
-			redirect_to restaurant_owners_restaurant_owners_index_path
+			redirect_to restaurant_owners_restaurants_path
 		else
 			flash.now[:alert] = "Update failed.  Please check the form."
 			render :edit
@@ -43,7 +43,7 @@ class RestaurantOwners::RestaurantsController < ApplicationController
 
 	def destroy
 		@restaurant.destroy
-		redirect_to restaurant_owners_restaurant_owners_index_path
+		redirect_to restaurant_owners_restaurants_path
 	end
 
 	private
@@ -56,7 +56,7 @@ class RestaurantOwners::RestaurantsController < ApplicationController
 		if Restaurant.find(params[:id]).restaurant_owner.id == current_restaurant_owner.id	
 			@restaurant = Restaurant.find(params[:id])
 		else
-			redirect_to restaurant_owners_restaurant_owners_index_path
+			redirect_to restaurant_owners_restaurants_path
 		end		
 	end
 

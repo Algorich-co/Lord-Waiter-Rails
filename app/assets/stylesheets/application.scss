@@ -178,11 +178,11 @@ a.button-collapse.top-nav i {
 }
 
 .side-nav .collapsible-header, .side-nav.fixed .collapsible-header{
-	margin-left: 32px !important;
-	padding-left: 0px !important;
+	margin-left: 0px !important;
+	padding-left: 32px !important;
 }
 .side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
-	margin-left: 20px;
+	padding-left: 52px;
 }
 
 .heading{
@@ -190,4 +190,35 @@ a.button-collapse.top-nav i {
     line-height: 110%;
     margin: 1.14rem 0 0.912rem 0;
     font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollbarstyle::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 0px;
+	background-color: #F5F5F5;
+}
+
+.scrollbarstyle::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.scrollbarstyle::-webkit-scrollbar-thumb
+{
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $primary-color;
 }

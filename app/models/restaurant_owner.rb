@@ -18,6 +18,7 @@ class RestaurantOwner < ApplicationRecord
   validates :tax, :length => { :minimum   => 0, :maximum   => 100 }
 
   has_many :restaurants
+  has_many :food_items, :through => :restaurants
 
   def image_url
   	image.url(:medium)

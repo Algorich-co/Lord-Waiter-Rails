@@ -28,6 +28,7 @@ $( document ).on('turbolinks:load', function() {
 	$('.button-collapse').sideNav({
 		draggable: true
 	});
+	$('select').material_select();
 
 	var preview = $("#image_display_restaurant_form");
 

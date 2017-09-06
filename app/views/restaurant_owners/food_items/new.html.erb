@@ -1,0 +1,23 @@
+<div class="section" id="index-banner">
+  <div class="container">
+    <h3 class="header center">Create Product</h3>
+    
+  </div>
+</div>
+<div class="section">
+	<div class="container">
+
+		<%= render('layouts/flash') %>    
+
+		<div class="row">
+
+			<%= form_for :food_item, url: restaurant_owners_food_items_path do |f| %>
+
+			<%= render('form', f: f )%>
+
+			<% end %>
+
+		</div>
+
+	</div>
+</div>

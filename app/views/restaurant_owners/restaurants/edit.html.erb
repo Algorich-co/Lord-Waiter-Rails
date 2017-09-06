@@ -10,7 +10,11 @@
 
 		<%= render('layouts/flash') %>    
 
-		<%= render('form')%>
+		<%= form_for :restaurant, url: restaurant_owners_restaurant_path, :method => :PUT do |f| %>
+
+		<%= render('form', f: f )%>
+
+		<% end %>
 
 	</div>
 </div>
