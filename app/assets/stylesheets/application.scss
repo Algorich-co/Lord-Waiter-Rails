@@ -30,6 +30,7 @@ html{
 // }
 
 body {
+	background: #eee;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -59,10 +60,6 @@ body {
 
 .parallax-container {
 	height: 100vh;
-}
-
-.holder{
-	min-height: 100vh;
 }
 
 .no-content-created{

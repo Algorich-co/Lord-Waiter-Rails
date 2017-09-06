@@ -96,11 +96,11 @@ class Api::V1::OrdersController < Api::V1::BaseController
   end
 
   def render_waiter_template(waiter_call)
-    HomeController.render(partial: 'restaurant_managers/waiter_calls', locals: { waiter_call: waiter_call }) 
+    HomeController.render(partial: 'restaurant_managers/dashboard/waiter_calls', locals: { waiter_call: waiter_call }) 
   end
 
   def render_order_template(order)
-    HomeController.render(partial: 'restaurant_managers/inqueue_item', locals: { order: order }) 
+    HomeController.render(partial: 'restaurant_managers/dashboard/inqueue_item', locals: { order: order }) 
   end
 
 end
