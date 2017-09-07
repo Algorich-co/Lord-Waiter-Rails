@@ -9,7 +9,7 @@
 
 <ul id="nav-mobile" class="secondary_background side-nav fixed scrollbarstyle" style="transform: translateX(0%);">
   <li><div class="user-view primary_background center-align">
-    <a href=""><img class="dashboard-logo" src="<%= asset_path('dashboard_logo.png') %>"></a>
+    <a href="<%= restaurant_owners_index_path %>"><img class="dashboard-logo" src="<%= asset_path('dashboard_logo.png') %>"></a>
   </div></li>
 
 
@@ -25,17 +25,19 @@
             <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_details_path %>">Details</a></li>
             <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_restaurants_path %>">Branches</a></li>
             <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_food_items_path %>">Products</a></li>
-            <li><a class="white-text waves-effect waves-red" href="#">Tables</a></li>
-            <li><a class="white-text waves-effect waves-red" href="#">Deals</a></li>
-            <li><a class="white-text waves-effect waves-red" href="#">Managers</a></li>
+            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_restaurant_managers_path %>">Managers</a></li>
+            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_tables_path %>">Tables</a></li>
+            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_commingsoon_path %>">Deals</a></li>
+            
           </ul>
         </div>
       </li>
     </ul>
   </li>
-  <li class=""><a href="" class="white-text waves-effect waves-red">Customer Feeback</a></li>
-  <li class="bold"><a href="" class="white-text waves-effect waves-red">Customers</a></li>
-  <li class="bold"><a href="" class="white-text waves-effect waves-red">Promotions</a></li>
+  <li class=""><a href="<%= restaurant_owners_orders_path %>" class="white-text waves-effect waves-red">Orders</a></li>
+  <li class=""><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Customer Feeback</a></li>
+  <li class="bold"><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Customers</a></li>
+  <li class="bold"><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Promotions</a></li>
 
   
 

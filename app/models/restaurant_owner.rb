@@ -19,6 +19,10 @@ class RestaurantOwner < ApplicationRecord
 
   has_many :restaurants
   has_many :food_items, :through => :restaurants
+  has_many :restaurant_managers, :through => :restaurants
+  has_many :tables, :through => :restaurants
+  has_many :orders, :through => :restaurants
+
 
   def image_url
   	image.url(:medium)

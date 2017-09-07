@@ -1,0 +1,30 @@
+
+  <div class="field input-field col s12">
+    <%= f.text_field :name, class: "validate #{error_class(@restaurant_manager, :name)}" %>
+    <%= f.label :name, "data-error" => show_errors(@restaurant_manager, :name) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.email_field :email, class: "validate #{error_class(@restaurant_manager, :email)}"%>
+    <%= f.label :email, "data-error" => show_errors(@restaurant_manager, :email) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.select :restaurant_id, current_restaurant_owner.restaurants.all.map {|p| [ p.name, p.id ] }, { :include_blank => "Select Restaurant" } %>
+    <%= f.label :restaurant_id, "data-error" => show_errors(@restaurant_manager, :restaurant_id) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.password_field :password, class: "validate #{error_class(@restaurant_manager, :password)}"%>
+    <%= f.label :password, "data-error" => show_errors(@restaurant_manager, :password) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.password_field :password_confirmation, class: "validate #{error_class(@restaurant_manager, :password_confirmation)}"%>
+    <%= f.label :password_confirmation, "data-error" => show_errors(@restaurant_manager, :password_confirmation) %>
+  </div>
+
+
+  <div class="row actions col s12">
+    <%= f.submit "Save", class: "waves-effect waves-light btn" %>
+  </div>

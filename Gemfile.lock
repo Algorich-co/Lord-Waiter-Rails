@@ -64,7 +64,7 @@ GEM
     arbre (1.1.1)
       activesupport (>= 3.0.0)
     arel (7.1.4)
-    aws-partitions (1.18.0)
+    aws-partitions (1.19.0)
     aws-sdk (3.0.1)
       aws-sdk-resources (~> 3)
     aws-sdk-acm (1.0.0)
@@ -91,7 +91,7 @@ GEM
     aws-sdk-batch (1.0.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
-    aws-sdk-budgets (1.0.0)
+    aws-sdk-budgets (1.1.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
     aws-sdk-clouddirectory (1.0.0)
@@ -139,7 +139,7 @@ GEM
     aws-sdk-codepipeline (1.0.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
-    aws-sdk-codestar (1.0.0)
+    aws-sdk-codestar (1.1.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
     aws-sdk-cognitoidentity (1.0.0)
@@ -154,7 +154,7 @@ GEM
     aws-sdk-configservice (1.0.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
-    aws-sdk-core (3.2.0)
+    aws-sdk-core (3.2.1)
       aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
@@ -257,7 +257,7 @@ GEM
     aws-sdk-kinesisanalytics (1.0.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
-    aws-sdk-kms (1.0.0)
+    aws-sdk-kms (1.1.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
     aws-sdk-lambda (1.0.0)
@@ -516,6 +516,8 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    d3_rails (4.1.1)
+      railties (>= 3.1.0)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -595,7 +597,7 @@ GEM
     mini_magick (4.8.0)
     mini_portile2 (2.2.0)
     minitest (5.10.3)
-    multi_json (1.12.1)
+    multi_json (1.12.2)
     net-http-persistent (2.9.4)
     netrc (0.11.0)
     nio4r (2.1.0)
@@ -740,6 +742,7 @@ DEPENDENCIES
   byebug
   cancan
   coffee-rails (~> 4.2)
+  d3_rails (~> 4.1, >= 4.1.1)
   devise
   devise_security_extension
   draper

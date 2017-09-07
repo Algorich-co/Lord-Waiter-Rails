@@ -40,7 +40,11 @@ Rails.application.routes.draw do
     get 'profile', to: 'dashboard#details', :as => 'details'
     resources :restaurants
     resources :food_items
-
+    resources :restaurant_managers
+    resources :tables
+    get 'orders', to: 'orders#index', :as => 'orders'
+    get 'orders/:order_id', to: 'orders#show', :as => 'order'
+    get 'comming-soon', to: 'dashboard#commingsoon', :as => 'commingsoon'
   end
 
   namespace :api, defaults: { format: :json } do

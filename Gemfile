@@ -28,6 +28,7 @@ gem 'aws-sdk'
 gem 'devise_security_extension'
 gem "recaptcha", require: "recaptcha/rails"
 gem 'nokogiri'
+gem 'd3_rails', '~> 4.1', '>= 4.1.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

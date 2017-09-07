@@ -1,0 +1,39 @@
+<div class="section" id="index-banner">
+	<div class="container">
+		<h1 class="header center">Orders</h1>
+	</div>
+</div>
+
+<%= render('layouts/flash') %>    
+
+
+
+<% if @orders.any? %>
+<section class="section">
+	<div class="container">
+		<% @orders.each do |order| %>	
+		<div class="col s12 m4">
+			<div class="card blue-grey darken-4">
+				<div class="card-content white-text">
+					<span class="card-title">Total: <%= number_to_currency order.total_price, :locale => :pk %></span>
+					<p>Date: <%= order.created_at %></p>
+				</div>
+				<div class="card-action white">
+					<a class="red-text" href="<%= restaurant_owners_order_path(order) %>">Details</a>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+	
+</section>
+<% else %>
+
+<section class="section valign-wrapper no-content-created">
+	<div class="container">
+		<h5 class="center-align">
+			Looks like you havn't received any orders yet
+		</h5>
+	</div>
+</section>
+<% end %>	

@@ -1,0 +1,23 @@
+<div class="section" id="index-banner">
+	<div class="container">
+		<h3 class="header center">Edit Table</h3>
+
+	</div>
+</div>
+<div class="section">
+	<div class="container">
+
+		<%= render('layouts/flash') %>    
+
+		<div class="row">
+
+			<%= form_for :table, url: restaurant_owners_table_path, :method => :PUT do |f| %>
+
+			<%= render('form', f: f )%>
+
+			<% end %>
+
+		</div>
+
+	</div>
+</div>

@@ -9,5 +9,8 @@ class RestaurantOwners::DashboardController < ApplicationController
 	def details
 	end
 
+	def commingsoon
+	end
+
 
 end
