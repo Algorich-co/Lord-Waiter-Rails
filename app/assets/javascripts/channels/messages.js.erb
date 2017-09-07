@@ -3,15 +3,18 @@
 App['messages' + <%=restaurant.id%>] = App.cable.subscriptions.create({channel: 'MessagesChannel', restaurant_id: <%=restaurant.id%>}, {  
 	received: function(data) {
 
-
-		if (data.type === "message") {
-			$("#messages").removeClass('hidden');
-			$('#messages').append(this.renderMessage(data));
-		} else if (data.type === "order"){
-		this.orderReceived(data);
-		}
-		else if(data.type === "waiter_call"){
-		this.waiterRequestReceived(data);
+		var holder = $("#managers-container");
+		var rest_id = holder.data("restaurant-id");
+		if(data.restaurant_id ==  rest_id){
+			if (data.type === "message") {
+				$("#messages").removeClass('hidden');
+				$('#messages').append(this.renderMessage(data));
+			} else if (data.type === "order"){
+				this.orderReceived(data);
+			}
+			else if(data.type === "waiter_call"){
+				this.waiterRequestReceived(data);
+			}
 		}
 
 

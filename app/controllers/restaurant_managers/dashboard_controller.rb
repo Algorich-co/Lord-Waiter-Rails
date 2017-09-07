@@ -22,6 +22,8 @@ class RestaurantManagers::DashboardController < ApplicationController
 	end
 
 	def order_preparing
+		if Order.find(params[:order_id]).restaurant.id == current_restaurant_manager.restaurant.id
+
 		order = Order.find(params[:order_id])
 		
 		order.prepare!
@@ -31,7 +33,8 @@ class RestaurantManagers::DashboardController < ApplicationController
 		order_state: order.state,
 		message: 'Message from order preparing',
 		user: 'controller',
-		type: 'order'
+		type: 'order',
+		restaurant_id: current_restaurant_manager.restaurant.id
 
 
 		# n = Rpush::Gcm::Notification.new
@@ -47,10 +50,15 @@ class RestaurantManagers::DashboardController < ApplicationController
 		# n.save!
 
 		head :ok
+		else
+			head :ok
+		end
 
 	end
 
 	def order_serving
+		if Order.find(params[:order_id]).restaurant.id == current_restaurant_manager.restaurant.id
+
 		order = Order.find(params[:order_id])
 		order.serve!
 
@@ -59,7 +67,8 @@ class RestaurantManagers::DashboardController < ApplicationController
 		order_state: order.state,
 		message: 'Message from order serving',
 		user: 'controller',
-		type: 'order'
+		type: 'order',
+		restaurant_id: current_restaurant_manager.restaurant.id
 
 
 		# n = Rpush::Gcm::Notification.new
@@ -75,10 +84,16 @@ class RestaurantManagers::DashboardController < ApplicationController
 		# n.save!
 
 		head :ok
+		else
+			head :ok
+		end
 
 	end
 
 	def order_checkout
+
+		if Order.find(params[:order_id]).restaurant.id == current_restaurant_manager.restaurant.id
+
 		order = Order.find(params[:order_id])
 		order.checkout!
 
@@ -87,7 +102,8 @@ class RestaurantManagers::DashboardController < ApplicationController
 		order_state: order.state,
 		message: 'Message from order checkout',
 		user: 'controller',
-		type: 'order'
+		type: 'order',
+		restaurant_id: current_restaurant_manager.restaurant.id
 
 
 		# n = Rpush::Gcm::Notification.new
@@ -103,20 +119,32 @@ class RestaurantManagers::DashboardController < ApplicationController
 		# n.save!
 
 		head :ok
+		else
+			head :ok
+		end
 
 	end
 
 	def receive_waiter_call
-		waiter_call = WaiterCall.find(params[:waiter_call_id])
-		waiter_call.complete = true
-		waiter_call.save!
 
-		ActionCable.server.broadcast "messages-#{waiter_call.table.restaurant.id}", 
-		waiter_call_id: waiter_call.id, 
-		waiter_call_complete: waiter_call.complete,
-		message: 'Message from order serving',
-		user: 'controller',
-		type: 'waiter_call'
+		if WaiterCall.find(params[:waiter_call_id]).table.restaurant.id === current_restaurant_manager.restaurant.id
+			
+			
+
+			waiter_call = WaiterCall.find(params[:waiter_call_id])
+
+
+
+			waiter_call.complete = true
+			waiter_call.save!
+
+			ActionCable.server.broadcast "messages-#{waiter_call.table.restaurant.id}", 
+			waiter_call_id: waiter_call.id, 
+			waiter_call_complete: waiter_call.complete,
+			message: 'Message from order serving',
+			user: 'controller',
+			type: 'waiter_call',
+			restaurant_id: current_restaurant_manager.restaurant.id
 
 
 		# n = Rpush::Gcm::Notification.new
@@ -131,7 +159,13 @@ class RestaurantManagers::DashboardController < ApplicationController
 		# }
 		# n.save!
 
-		head :ok		
+			head :ok	
+
+		else
+			head :ok
+		end
+
+
 	end
 
 end

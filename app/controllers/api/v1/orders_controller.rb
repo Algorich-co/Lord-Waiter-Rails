@@ -38,7 +38,8 @@ class Api::V1::OrdersController < Api::V1::BaseController
         order_id: order.id, 
         order_state: order.state, 
         template: template,
-        type: 'order'
+        type: 'order',
+        restaurant_id: create_params[:restaurant_id]
 
 
       render json: {error: false, message: "success", response: Api::V1::OrderSerializer.new(order).as_json}
@@ -61,7 +62,8 @@ class Api::V1::OrdersController < Api::V1::BaseController
         waiter_call_id: waiter_call.id, 
         waiter_call_complete: waiter_call.complete, 
         template: template,
-        type: 'waiter_call'
+        type: 'waiter_call',
+        restaurant_id: waiter_call.table.restaurant.id
 
 
       render json: {error: false, message: "success"}
