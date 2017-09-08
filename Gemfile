@@ -18,7 +18,7 @@ gem 'materialize-sass'
 # gem 'bootstrap-sass', '~> 3.3.6'
 gem 'material_icons'
 gem 'pg'
-gem 'active_admin_flat_skin'
+# gem 'active_admin_flat_skin'
 gem "font-awesome-rails"
 gem 'rpush'
 gem 'net-http-persistent', '< 3'

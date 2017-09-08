@@ -13,9 +13,9 @@ class RestaurantOwners::OrdersController < ApplicationController
 	private
 
 	def set_order
-		id_to_match = Order.find(params[:id]).restaurant.id
+		id_to_match = Order.find(params[:order_id]).restaurant.id
 		if current_restaurant_owner.restaurants.map{|a| a.id}.include? id_to_match
-			@order = Order.find(params[:id])
+			@order = Order.find(params[:order_id])
 		else
 			redirect_to restaurant_owners_orders_path
 		end		

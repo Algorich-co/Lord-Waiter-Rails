@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170904164237) do
+ActiveRecord::Schema.define(version: 20170908220747) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -135,6 +135,15 @@ ActiveRecord::Schema.define(version: 20170904164237) do
     t.index ["table_id"], name: "index_orders_on_table_id", using: :btree
   end
 
+  create_table "payments", force: :cascade do |t|
+    t.integer  "restaurant_owner_id"
+    t.decimal  "price"
+    t.string   "locale"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.index ["restaurant_owner_id"], name: "index_payments_on_restaurant_owner_id", using: :btree
+  end
+
   create_table "restaurant_managers", force: :cascade do |t|
     t.string   "email",                             default: "", null: false
     t.string   "encrypted_password",                default: "", null: false
@@ -186,6 +195,8 @@ ActiveRecord::Schema.define(version: 20170904164237) do
     t.boolean  "tax_available",          default: false
     t.decimal  "discount",               default: "0.0"
     t.boolean  "discount_available",     default: false
+    t.boolean  "active",                 default: false, null: false
+    t.string   "locale",                 default: "pk"
     t.index ["confirmation_token"], name: "index_restaurant_owners_on_confirmation_token", unique: true, using: :btree
     t.index ["email"], name: "index_restaurant_owners_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_restaurant_owners_on_reset_password_token", unique: true, using: :btree
@@ -266,6 +277,18 @@ ActiveRecord::Schema.define(version: 20170904164237) do
     t.index ["delivered", "failed"], name: "index_rpush_notifications_multi", where: "((NOT delivered) AND (NOT failed))", using: :btree
   end
 
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer  "restaurant_owner_id"
+    t.integer  "number_of_branches",  default: 1, null: false
+    t.integer  "number_of_managers",  default: 1, null: false
+    t.integer  "managers_per_branch", default: 1, null: false
+    t.datetime "last_payment"
+    t.datetime "valid_till"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.index ["restaurant_owner_id"], name: "index_subscriptions_on_restaurant_owner_id", using: :btree
+  end
+
   create_table "tables", force: :cascade do |t|
     t.string   "qr"
     t.integer  "restaurant_id"
@@ -304,8 +327,10 @@ ActiveRecord::Schema.define(version: 20170904164237) do
   add_foreign_key "orders", "clients"
   add_foreign_key "orders", "restaurants"
   add_foreign_key "orders", "tables"
+  add_foreign_key "payments", "restaurant_owners"
   add_foreign_key "restaurant_managers", "restaurants"
   add_foreign_key "restaurants", "restaurant_owners"
+  add_foreign_key "subscriptions", "restaurant_owners"
   add_foreign_key "tables", "restaurants"
   add_foreign_key "waiter_calls", "clients"
   add_foreign_key "waiter_calls", "tables"

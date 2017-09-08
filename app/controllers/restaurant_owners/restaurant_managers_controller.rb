@@ -14,9 +14,13 @@ class RestaurantOwners::RestaurantManagersController < ApplicationController
 
 	def create
 		@restaurant_manager = current_restaurant_owner.restaurant_managers.build(restaurant_manager_params)
-		if @restaurant_manager.save
+		restaurant = Restaurant.find(@restaurant_manager.restaurant.id)
+		if restaurant.restaurant_manager != nil
+			flash.now[:alert] = "You can not create more than one manager for any branch."
+			render :new
+		elsif @restaurant_manager.save
 			flash[:success] = "Your manager has been created!"
-			redirect_to restaurant_owners_restaurant_managers_path
+			redirect_to restaurant_owners_restaurant_managers_path		
 		else
 			flash.now[:alert] = "Your new manager couldn't be created!  Please check the form."
 			render :new

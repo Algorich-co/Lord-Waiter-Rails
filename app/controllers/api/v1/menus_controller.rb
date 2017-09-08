@@ -4,6 +4,8 @@ class Api::V1::MenusController < Api::V1::BaseController
     client = Client.find_by(authentication_token: menu_params[:authentication_token])
     if !client.present?
       render json: {error: true, message: "Account not authorized, please login again." }, :status => 200
+    elsif !Restaurant.find(menu_params[:restaurant_id]).restaurant_owner.active
+      render json: {error: true, message: "Unfortunately, the restaurant is not functional online." }, :status => 200
     else
       @food_items = FoodItem.where(:restaurant_id => menu_params[:restaurant_id])
       @restaurant = Restaurant.find(menu_params[:restaurant_id])

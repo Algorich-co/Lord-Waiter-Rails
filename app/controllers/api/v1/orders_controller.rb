@@ -6,7 +6,8 @@ class Api::V1::OrdersController < Api::V1::BaseController
     client = Client.find_by(authentication_token: create_params[:authentication_token])
     if !client.present? || client == nil
       render json: {error: true, message: "Account not authorized, please login again." }, :status => 200
-
+    elsif !Restaurant.find(create_params[:restaurant_id]).restaurant_owner.active
+      render json: {error: true, message: "Unfortunately, the restaurant is not functional online." }, :status => 200
     else
       # client.generate_authentication_token
       table = Table.find(create_params[:table_id])
@@ -53,6 +54,8 @@ class Api::V1::OrdersController < Api::V1::BaseController
     client = Client.find_by(authentication_token: waiter_call_params[:authentication_token])
     if !client.present? || client == nil
       render json: {error: true, message: "Account not authorized, please login again." }, :status => 200
+    elsif !Table.find(waiter_call_params[:table_id]).restaurant.restaurant_owner.active
+      render json: {error: true, message: "Unfortunately, the restaurant is not functional online." }, :status => 200
     else
       waiter_call = WaiterCall.create(table_id: waiter_call_params[:table_id], client_id: client.id)
       

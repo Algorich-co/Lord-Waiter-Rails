@@ -4,7 +4,6 @@ class Category < ApplicationRecord
 	validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 	validates_presence_of :name, length: { in: 6..20 }
 	validates_presence_of :image
-	validates_presence_of :restaurant
 
 	validates :name, :length => { :minimum   => 2, :maximum   => 50 }
 

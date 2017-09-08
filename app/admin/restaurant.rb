@@ -1,6 +1,6 @@
 ActiveAdmin.register Restaurant do
 
-  permit_params :name,:active, :address, :contact, :image, :discount, :discount_available, :tax, :tax_available
+  permit_params :name,:active, :address, :contact, :image, :restaurant_owner
 
   
   index do
@@ -8,10 +8,8 @@ ActiveAdmin.register Restaurant do
     id_column
     column :name
     column :active
-    column :address
     column :contact
-    column :tax_available
-    column :discount_available
+    column :restaurant_owner
     actions
 
   end
@@ -22,12 +20,8 @@ ActiveAdmin.register Restaurant do
       f.input :active
       f.input :address
       f.input :contact
+      f.input :restaurant_owner
       f.input :image, :required => false, :as => :file
-      f.input :discount
-      f.input :discount_available
-      f.input :tax
-      f.input :tax_available
-
     end
 
 
@@ -44,11 +38,8 @@ ActiveAdmin.register Restaurant do
       row :active
       row :address
       row :contact
-      row :discount
-      row :discount_available
-      row :tax
-      row :tax_available
-      
+      row :restaurant_owner
+            
   end
 
 
@@ -101,9 +92,6 @@ ActiveAdmin.register Restaurant do
     filter :active
     filter :address
     filter :contact
-    filter :discount_available
-    filter :discount
-    filter :tax_available
-    filter :tax
+    filter :restaurant_owner
 
   end

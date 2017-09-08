@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  restaurant_owner: one
+  number_of_branches: 1
+  number_of_managers: 1
+  managers_per_branch: 1
+  last_payment: 2017-09-08 17:19:37
+  valid_till: 
+
+two:
+  restaurant_owner: two
+  number_of_branches: 1
+  number_of_managers: 1
+  managers_per_branch: 1
+  last_payment: 2017-09-08 17:19:37
+  valid_till: 

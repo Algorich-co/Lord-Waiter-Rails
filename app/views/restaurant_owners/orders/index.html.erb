@@ -11,6 +11,7 @@
 <% if @orders.any? %>
 <section class="section">
 	<div class="container">
+		<div class="row">
 		<% @orders.each do |order| %>	
 		<div class="col s12 m4">
 			<div class="card blue-grey darken-4">
@@ -24,6 +25,7 @@
 			</div>
 		</div>
 		<% end %>
+		</div>
 	</div>
 	
 </section>

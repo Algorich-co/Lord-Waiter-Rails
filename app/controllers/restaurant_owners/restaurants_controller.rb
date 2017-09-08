@@ -14,7 +14,12 @@ class RestaurantOwners::RestaurantsController < ApplicationController
 
 	def create
 		@restaurant = current_restaurant_owner.restaurants.build(restaurant_params)
-		if @restaurant.save
+		number_of_branches = current_restaurant_owner.subscription.number_of_branches
+
+		if current_restaurant_owner.restaurants.count >= number_of_branches
+			flash.now[:alert] = "You can not create more than #{number_of_branches} #{pluralize(number_of_branches, 'branch')}."
+			render :new
+		elsif @restaurant.save
 			flash[:success] = "Your branch has been created!"
 			redirect_to restaurant_owners_restaurants_path
 		else

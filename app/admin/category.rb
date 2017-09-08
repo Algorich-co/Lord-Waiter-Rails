@@ -28,26 +28,26 @@ ActiveAdmin.register Category do
       # Will display the image on show object page
     end
 
-    panel "Food Item" do
-      table_for(category.food_items) do
+    # panel "Food Item" do
+    #   table_for(category.food_items) do
 
-        column :title do |food|
-          link_to("#{food.title}", admin_category_food_item_path(category, food))
-        end
-
-
-        column :thumbnail do |food|
-          image_tag(food.image.url(:thumb))
-        end
+    #     column :title do |food|
+    #       link_to("#{food.title}", admin_category_food_item_path(category, food))
+    #     end
 
 
-        tr class: "action_items" do
-          td link_to("New Food Item", new_admin_category_food_item_path(category),
-           class: :button)
-          end
-        end
-      end
+    #     column :thumbnail do |food|
+    #       image_tag(food.image.url(:thumb))
+    #     end
 
-    end
+
+    #     tr class: "action_items" do
+    #       td link_to("New Food Item", new_admin_category_food_item_path(category),
+    #        class: :button)
+    #       end
+    #     end
+    # end
 
   end
+
+end

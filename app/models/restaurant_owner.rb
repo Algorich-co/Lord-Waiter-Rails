@@ -2,8 +2,8 @@ class RestaurantOwner < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-	  :recoverable, :rememberable, :trackable, :validatable,
-	  :lockable
+    :recoverable, :rememberable, :trackable, :validatable,
+    :lockable
 
   validates :full_name, presence: true, length: { minimum: 4, maximum: 35 }
   validates :contact, presence: true, length: { minimum: 4, maximum: 16 }
@@ -22,6 +22,8 @@ class RestaurantOwner < ApplicationRecord
   has_many :restaurant_managers, :through => :restaurants
   has_many :tables, :through => :restaurants
   has_many :orders, :through => :restaurants
+  has_many :payments
+  has_one :subscription
 
 
   def image_url

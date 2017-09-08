@@ -1,6 +1,8 @@
 class RestaurantOwners::RegistrationsController < Devise::RegistrationsController
   layout 'restaurant_owners_out'
   prepend_before_action :check_captcha, only: [:create, :update]
+  # after_action :create_subscription, only: [:create]
+  after_filter :create_subscription
 
   private
 
@@ -18,6 +20,14 @@ class RestaurantOwners::RegistrationsController < Devise::RegistrationsControlle
         resource.validate # Look for any other validation errors besides Recaptcha
         respond_with_navigational(resource) { render :new }
       end 
+  end
+
+  def create_subscription
+    if resource.persisted? && resource.subscription.nil? # user is created successfuly
+      resource.create_subscription
     end
+  end
+
+
     
 end

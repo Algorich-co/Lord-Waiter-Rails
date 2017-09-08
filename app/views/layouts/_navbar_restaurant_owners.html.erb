@@ -1,8 +1,10 @@
+<% if current_restaurant_owner.subscription.valid_till.nil? || (DateTime.now > current_restaurant_owner.subscription.valid_till ) %>
 <div class="fixed-announcement">
   <div class="announcement">
     <div class="container">Your restaurant is not available to public, <a href=""> Subscribe</a> and take your business to the next level!</div>
   </div>
 </div>
+<% end %>
 
 <div class="container"><a href="" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>
 
@@ -38,7 +40,7 @@
   <li class=""><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Customer Feeback</a></li>
   <li class="bold"><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Customers</a></li>
   <li class="bold"><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Promotions</a></li>
-
+  <li class="bold"><a rel="nofollow" data-method="delete" href="<%= destroy_restaurant_owner_session_path %>" class="white-text waves-effect waves-red">Logout</a></li>
   
 
 </ul>

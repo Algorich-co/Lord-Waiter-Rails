@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  restaurant_owner: one
+  price: 1
+  locale: MyString
+
+two:
+  restaurant_owner: two
+  price: 1
+  locale: MyString

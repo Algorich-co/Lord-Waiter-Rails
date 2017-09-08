@@ -1,0 +1,47 @@
+<div class="section" id="index-banner">
+	<div class="container">
+		<h3 class="header center">Order # <%= @order.id %></h3>
+		
+	</div>
+</div>
+
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col s12 m6 l6 white z-depth-1">
+				<h5 class="my-pink-text">Branch:</h5>
+				<p><%= @order.restaurant.name %></p>	
+			</div>
+
+			<div class="col s12 m6 l6 white z-depth-1">
+
+				<h5 class="my-pink-text">Table:</h5>
+				<p><%= @order.table.name %></p>
+			</div>
+			<div class="col s12 m6 l6 white z-depth-1">
+				<h5 class="my-pink-text">State:</h5>
+				<p><%= @order.state %></p>
+			</div>
+			<div class="col s12 m6 l6 white z-depth-1">
+				<h5 class="my-pink-text">Total:</h5>
+				<p><%=number_to_currency @order.total_price, :locale => :pk %></p>				
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col s12 center white z-depth-3">
+				<h4>INVOICE</h4>
+				<ul class="collection">
+					<% @order.line_items.each do |item| %>
+					<li class="collection-item"><%= item.food_item.title %> - <%= number_to_currency item.price, :locale => :pk %></li>
+					<% end %>	
+				</ul>
+				<h5 class="right"><%=number_to_currency @order.total_price, :locale => :pk %></h5>			
+			</div>
+		</div>
+	</div>		
+</div>
+</section>

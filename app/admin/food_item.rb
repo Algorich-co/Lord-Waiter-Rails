@@ -1,5 +1,5 @@
 ActiveAdmin.register FoodItem do
-  belongs_to :category
+  belongs_to :restaurant
 
   # menu :priority => 2
   permit_params :title, :price, :featured, :category_id, :restaurant_id, :image, :description
@@ -17,7 +17,8 @@ ActiveAdmin.register FoodItem do
       f.input :description
       f.input :price
       f.input :featured
-      f.input :restaurant, :selected => f.category.restaurant.id
+      f.input :category
+      f.input :restaurant, :selected => f.restaurant.id
       f.input :image, :required => true, :as => :file
     end
     f.actions
