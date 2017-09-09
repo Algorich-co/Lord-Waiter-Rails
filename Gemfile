@@ -25,7 +25,7 @@ gem 'net-http-persistent', '< 3'
 gem 'rails_real_favicon'
 gem 'aws-sdk', '~> 2.3'
 
-# gem 'serviceworker-rails'
+gem 'serviceworker-rails'
 gem 'devise_security_extension'
 gem "recaptcha", require: "recaptcha/rails"
 gem 'nokogiri'
