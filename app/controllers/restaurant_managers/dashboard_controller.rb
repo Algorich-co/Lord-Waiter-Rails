@@ -37,17 +37,17 @@ class RestaurantManagers::DashboardController < ApplicationController
 		restaurant_id: current_restaurant_manager.restaurant.id
 
 
-		# n = Rpush::Gcm::Notification.new
-		# n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
-		# client_id = order.client.gcm
-		# n.registration_ids = [client_id]
-		# n.data = { message: "khapa update!", order_id: order.id, order_state: order.state }
-		# n.priority = 'high'        # Optional, can be either 'normal' or 'high'
-		# n.content_available = true # Optional
-		# n.notification = { body: 'Your order is being prepared!',
-		# 	title: order.restaurant.name
-		# }
-		# n.save!
+		n = Rpush::Gcm::Notification.new
+		n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
+		client_id = order.client.gcm
+		n.registration_ids = [client_id]
+		n.data = { message: "Order update!", order_id: order.id, order_state: order.state }
+		n.priority = 'high'        # Optional, can be either 'normal' or 'high'
+		n.content_available = true # Optional
+		n.notification = { body: 'Your order is being prepared!',
+			title: order.restaurant.name
+		}
+		n.save!
 
 		head :ok
 		else
@@ -71,17 +71,17 @@ class RestaurantManagers::DashboardController < ApplicationController
 		restaurant_id: current_restaurant_manager.restaurant.id
 
 
-		# n = Rpush::Gcm::Notification.new
-		# n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
-		# client_id = order.client.gcm
-		# n.registration_ids = [client_id]
-		# n.data = { message: "khapa update!", order_id: order.id, order_state: order.state }
-		# n.priority = 'high'        # Optional, can be either 'normal' or 'high'
-		# n.content_available = true # Optional
-		# n.notification = { body: 'Your order is prepared!',
-		# 	title: order.restaurant.name
-		# }
-		# n.save!
+		n = Rpush::Gcm::Notification.new
+		n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
+		client_id = order.client.gcm
+		n.registration_ids = [client_id]
+		n.data = { message: "Order update!", order_id: order.id, order_state: order.state }
+		n.priority = 'high'        # Optional, can be either 'normal' or 'high'
+		n.content_available = true # Optional
+		n.notification = { body: 'Your order is prepared!',
+			title: order.restaurant.name
+		}
+		n.save!
 
 		head :ok
 		else
@@ -106,17 +106,17 @@ class RestaurantManagers::DashboardController < ApplicationController
 		restaurant_id: current_restaurant_manager.restaurant.id
 
 
-		# n = Rpush::Gcm::Notification.new
-		# n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
-		# client_id = order.client.gcm
-		# n.registration_ids = [client_id]
-		# n.data = { message: "khapa update!", order_id: order.id, order_state: order.state }
-		# n.priority = 'high'        # Optional, can be either 'normal' or 'high'
-		# n.content_available = true # Optional
-		# n.notification = { body: 'Thank you for dining with us.',
-		# 	title: order.restaurant.name
-		# }
-		# n.save!
+		n = Rpush::Gcm::Notification.new
+		n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
+		client_id = order.client.gcm
+		n.registration_ids = [client_id]
+		n.data = { message: "Order complete!", order_id: order.id, order_state: order.state }
+		n.priority = 'high'        # Optional, can be either 'normal' or 'high'
+		n.content_available = true # Optional
+		n.notification = { body: 'Thank you for dining with us.',
+			title: order.restaurant.name
+		}
+		n.save!
 
 		head :ok
 		else
@@ -147,17 +147,17 @@ class RestaurantManagers::DashboardController < ApplicationController
 			restaurant_id: current_restaurant_manager.restaurant.id
 
 
-		# n = Rpush::Gcm::Notification.new
-		# n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
-		# client_id = waiter_call.client.gcm
-		# n.registration_ids = [client_id]
-		# n.data = { message: "khapa update!" }
-		# n.priority = 'high'        # Optional, can be either 'normal' or 'high'
-		# n.content_available = true # Optional
-		# n.notification = { body: 'We are sending you a waiter in a minute',
-		# 	title: waiter_call.table.restaurant.name
-		# }
-		# n.save!
+		n = Rpush::Gcm::Notification.new
+		n.app = Rpush::Gcm::App.find_by_name("lordwaiter")
+		client_id = waiter_call.client.gcm
+		n.registration_ids = [client_id]
+		n.data = { message: "Request for waiter received!" }
+		n.priority = 'high'        # Optional, can be either 'normal' or 'high'
+		n.content_available = true # Optional
+		n.notification = { body: 'We are sending you a waiter in a minute',
+			title: waiter_call.table.restaurant.name
+		}
+		n.save!
 
 			head :ok	
 
