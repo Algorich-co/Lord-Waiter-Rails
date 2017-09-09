@@ -14,7 +14,7 @@ bundle exec rpush start
 Execute following commands once on console to create RPush app
 
 app = Rpush::Gcm::App.new
-app.name = "khapapk"
+app.name = "lordwaiter"
 app.auth_key = "SERVER_KEY"
 app.connections = 1
 app.save!
