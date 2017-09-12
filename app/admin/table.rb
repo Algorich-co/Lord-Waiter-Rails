@@ -4,7 +4,7 @@ ActiveAdmin.register Table do
 	permit_params :restaurant_id, :name
 
 	after_create do |table|
-		qr = RQRCode::QRCode.new("golemtron restaurant:#{table.restaurant_id};table:#{table.id}")
+		qr = RQRCode::QRCode.new("lordwaiter restaurant:#{table.restaurant_id};table:#{table.id}")
 		png = qr.as_png(
 			resize_gte_to: false,
 			resize_exactly_to: false,
