@@ -1,138 +1,171 @@
-<div class="parallax-container">
-	<div class="parallax blue-grey darken-4">
-		<!-- <img src="images/parallax1.jpg"> -->
-		<%= image_tag(asset_path('main-min-min.png')) %>
-	</div>
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">Allow your customers to place orders through Lord Waiter!</h1>
 
-	<div class="section row">
-		<div class="container ">
-			<div class="col s12 l4 m6 parallax-text trans z-depth-4">
-				<div class="caption center-align">
-					<h2 class="white-text text-uppercase animated wow fadeInLeft">Order Like A Lord!</h2>
-					<p class="blue-grey-text text-lighten-5 text-lowercase  animated wow fadeInLeft">
-						PLACE orders through Lord Waiter at your favorite restaurants and make yourself a LORD!
-					</p>
+              <a href="<%= new_restaurant_owner_registration_path %>" class="btn btn-outline btn-xl">Start Now for Free!</a>
 
-        <!-- <div class="row">
-          <a class="col s12 l6 m5 app-btns animated wow fadeInLeft red waves-effect waves-light btn">
-            <i class="fa fa-apple left" aria-hidden="true"></i> Iphone App</a>
-        </div> -->
-
-          <!-- <div class="row">
-          <a class="col s12 l6 m5 app-btns animated wow fadeInLeft btn waves-effect waves-light red"><i class="material-icons left">android</i>Android App</a>
-      </div> -->
-
-
-      <div class="row">
-      <a class="col s12 animated wow fadeInLeft" href='https://play.google.com/store/apps/details?id=com.lordwaiter'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' class= "responsive-img"/></a>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div class="device-mockup galaxy_s5 portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="<%= asset_path('main-screen-min.png') %>" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </header>
 
-  </div>      
-</div>
-</div>
-</div>
+    <section class="download bg-primary text-center" id="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading">Order Like A Lord</h2>
+            <p>Our app is currently available on android devices only! Download now to get started!</p>
+            <div class="badges">
+              <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.lordwaiter"><img src="<%= asset_path('img/google-play-badge.svg')%>" alt="Download from Play Store"></a>
+              <!-- <a class="badge-link" href="#"><img src="" alt=""></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Lord Waiter</h2>
+          <p class="text-muted">Automating the waiter's job like a boss!</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="device-mockup galaxy_s5 portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="<%= asset_path('order-screen-min.png') %>" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-screen-smartphone text-primary"></i>
+                    <h3>Save Resources</h3>
+                    <p class="text-muted">Remove the need for extra staff by automating the restaurant's lifecycle and giving customers the power to order.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-camera text-primary"></i>
+                    <h3>Increase Sales</h3>
+                    <p class="text-muted">Keep your restaurant in the innovative chain and increase your sales by having an edge over your competition.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-present text-primary"></i>
+                    <h3>Targeted Marketing</h3>
+                    <p class="text-muted">Send targeted advertisements to your restaurant's valued customers about your campaigns and promotions.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-lock-open text-primary"></i>
+                    <h3>Customer Loyalty</h3>
+                    <p class="text-muted">Keep your restaurant customers loyal by providing an interactive dine-in experience.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="pattern_bg text-center" id="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading ">Pricing</h2>
+            <p>We have one package for all sorts of restaurants, we don't discriminate based on your size!</p>
+            <div class="columns mx-auto">
+              <ul class="price primary_bg">
+                <li class="header fb_blue">Pro Package</li>
+                <li class="accent_bg">$ 15 / month / branch</li>
+                <li>Unlimited Menu Items</li>
+                <li>Unlimited Customer</li>
+                <li>Unlimited Tables</li>
+                <li class="">
+                  <a href="#" class="btn btn-outline btn-xl js-scroll-trigger">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="container" id="features">
-	<div class="section">
-		<h3 class="center-align">Features</h3>
-		<div class="divider"></div>
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <h2>Stop Waiting.<br>Start Ruling.</h2>
+          <a href="<%= new_restaurant_owner_registration_path %>" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
 
-		<div class="row">
-
-			<div class="col m6">
-				<div class="iphone center-align">
-					<%= image_tag(asset_path('about-min.png'), class: "animated wow fadeInLeft responsive-img", width: "650px") %>
-				</div>
-			</div>
-
-			<div class="col m6 animated wow fadeInRight">
-				<div>
-					<h3>Take command of restaurant experience.</h3>
-
-					<div class="section">
-						<ul class="collection z-depth-2">
-							<li class="collection-item">Increase customer retention</li>
-							<li class="collection-item">Provide an interactive experience to customers</li>
-							<li class="collection-item">Run targeted campaigns</li>
-							<li class="collection-item">Keep your restaurant customers loyal</li>
-							<li class="collection-item">Improve waiter and restaurant ordering process</li>
-						</ul>
-					</div>
-
-				</div>          
-			</div>
-
-		</div>
-
-	</div>
-</div>
-
-<div class="section blue-grey darken-4">
-
-	<div class="container">
-
-		<div class="row animated wow fadeInRight">
-
-			<div class="col l4 m12 s12 center-align">
-				<i class="large material-icons blue-grey-text text-lighten-5">show_chart</i>
-				<h4 class="blue-grey-text text-lighten-5">Increase Sales</h4>
-				<p class="blue-grey-text text-lighten-5">Keep your restaurant in the innovative chain and increase your sales by having an edge over your competition</p>
-			</div>
-			<div class="col l4 m12 s12 center-align">
-				<i class="large material-icons blue-grey-text text-lighten-5">attach_money</i>
-				<h4 class="blue-grey-text text-lighten-5">Save Resources</h4>
-				<p class="blue-grey-text text-lighten-5">Remove the need for extra staff by automating the restaurant's lifecycle and giving customers the power to order.</p>
-			</div>
-			<div class="col l4 m12 s12 center-align">
-				<i class="large material-icons blue-grey-text text-lighten-5">people</i>
-				<h4 class="blue-grey-text text-lighten-5">Targeted Marketing</h4>
-				<p class="blue-grey-text text-lighten-4">Send targeted advertisements to your restaurant's valued customers about your campaigns and promotions.</p>
-			</div>
-
-		</div>
-
-	</div>
-</div>
-
-<div class="section" id="pricing">
-	<div class="container">
-		<h3 class="center-align">Pricing</h3>
-		<div class="divider"></div>
-
-		<div class="row">
-			<div class="col s12 m6 animated wow fadeInLeft">
-				<h4 class="center-align">One package for all our Lords!</h4>
-				<div class="card blue-grey darken-4">
-					<div class="card-content white-text">
-						<span class="card-title">Pro Package</span>
-						<p>We have one package for all sorts of restaurants, we don't discriminate based on your size!</p>
-					</div>
-
-					<%= link_to(("" + content_tag(:i, "arrow_forward", :class => "material-icons")).html_safe,
-						new_email_message_path,
-						:class => "btn-floating halfway-fab waves-effect waves-light red") %> 
-
-						<div class="card-action">
-							<ul class="white-text">
-								<li>Unlimited Tables</li>
-								<li>Unlimited Menu Items</li>
-								<li>Unlimited Customer</li>
-								<li>$ 15 per Month</li>
-								<li>$ 0.1 per Order placed through Lord Waiter</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col s12 m6 animated wow fadeInRight">
-					<div class="iphone center-align">
-						<%= image_tag(asset_path('order-min.png'), class: "responsive-img", width: "650px") %>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
+    <section class="contact bg-primary" id="contact">
+      <div class="container">
+        <h2>Join our
+          <i class="fa fa-heart"></i>
+          family!</h2>
+          <ul class="list-inline list-social">
+            <li class="list-inline-item social-twitter">
+              <a href="https://twitter.com/lord_waiter" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-facebook">
+              <a href="https://www.facebook.com/lordwaiter/" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-google-plus">
+              <a href="https://www.instagram.com/lord_waiter/" target="_blank" >
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="mx-auto">
+            <p></p>
+                <a href="<%= new_email_message_path %>" class="btn btn-outline-main btn-xl">Write to Us!</a>
+            </div>
+          </div>
+        </div>
+      </section>

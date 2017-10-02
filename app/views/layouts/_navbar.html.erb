@@ -1,52 +1,42 @@
-<nav>
-  <div class="nav-wrapper white">
-    <div class="container">
-      <a href=<%= root_path %> class="brand-logo blue-grey-text text-darken-2"><%= t('app_name') %></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons blue-grey-text">menu</i></a>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">   
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Lord Waiter</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Social</a>
+            </li>
+            
+            <% if restaurant_owner_signed_in? %>
+            <li class="nav-item">
+            <%= link_to('Home', restaurant_owners_index_path, class: "nav-link") %>        
+            </li>
+            <li class="nav-item">
+            <%= link_to('Logout', destroy_restaurant_owner_session_path, method: :delete, class: "nav-link") %>        
+            </li >
+            <% else %>
+            <li class="nav-item">
+              <%= link_to('Login', new_restaurant_owner_session_path, class: "nav-link")  %>  
+            </li>
+            
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#features" class="blue-grey-text text-darken-2">Features</a></li>
-        <li><a href="#pricing" class="blue-grey-text text-darken-2">Pricing</a></li>
-        <li>
-          <%= link_to('Contact', new_email_message_path, class: "blue-grey-text text-darken-2") %> 
-        </li>
-        <% if restaurant_owner_signed_in? %>
-        <li>
-        <%= link_to('Home', restaurant_owners_index_path, class: "blue-grey-text text-darken-2") %>        
-        </li>
-        <li>
-        <%= link_to('Logout', destroy_restaurant_owner_session_path, method: :delete, class: "blue-grey-text text-darken-2") %>        
-        </li>
-        <% else %>
-        <li>
-          <%= link_to('Login', new_restaurant_owner_session_path, class: "blue-grey-text text-darken-2")  %>  
-        </li>
-        <li>
-          <%= link_to('Register', new_restaurant_owner_registration_path, class: "blue-grey-text text-darken-2")  %>  
-        </li>
-        <% end %>
 
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li>
-
-          <%= link_to('Contact', new_email_message_path) %> 
-        </li>         
-        <% if restaurant_owner_signed_in? %>
-        <li>
-          <%= link_to('Logout', destroy_restaurant_owner_session_path, method: :delete) %>        
-        </li>
-        <% else %>
-        <li>
-          <%= link_to('Login', new_restaurant_owner_session_path)  %>  
-        </li>
-        <li>
-          <%= link_to('Register', new_restaurant_owner_registration_path)  %>  
-        </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-</nav>

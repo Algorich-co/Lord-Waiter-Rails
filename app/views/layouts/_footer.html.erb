@@ -1,37 +1,30 @@
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Lord Waiter</h5>
-        <p class="grey-text text-lighten-4">Automating the waiter's job like a boss!</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          
-          <li><a class="grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/lordwaiter/">Facebook</a></li>
-          <li><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/lord_waiter">Twitter</a></li>
-          <li><a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/lord_waiter">Instagram</a></li>
-          <% if restaurant_manager_signed_in? %>
-          <li>
-            <%= link_to('Manager Logout', destroy_restaurant_manager_session_path, method: :delete, class: "grey-text text-lighten-3") %>        
-          </li>
-          <% else %>
-          <li class="waves-effect waves-light">
-            <%= link_to('Manager Login', new_restaurant_manager_session_path, class: "grey-text text-lighten-3")  %>  
-          </li>
-          <% end %>
-          <li>
-            <%= link_to('Privacy Policy', policy_path, class: "grey-text text-lighten-3") %>        
-          </li>
-          <li>
-            <%= link_to('EULA', eula_path, class: "grey-text text-lighten-3") %>        
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © <%= Date.today.year %> <%= t('app_name') %>,  All rights reserved.
-    </div>
-  </div>
+
+      <footer>
+        <div class="container">
+          <p>&copy; <%= Date.today.year %> Lord Waiter. All Rights Reserved.</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="<%= policy_path %>">Privacy</a>
+            </li> |
+            <li class="list-inline-item">
+              <a href="<%= eula_path %>">EULA</a>
+            </li> |
+
+            <% if restaurant_manager_signed_in? %>
+            <li class="list-inline-item">
+              <%= link_to('Manager Logout', destroy_restaurant_manager_session_path, method: :delete) %>        
+            </li> |
+            <li class="list-inline-item">
+              <%= link_to('Home', restaurant_managers_index_path) %>        
+            </li>
+            <% else %>
+            <li class="list-inline-item">
+              <%= link_to('Manager Login', new_restaurant_manager_session_path)  %>  
+            </li>
+            <% end %>
+
+            
+          </ul>
+        </div>
+      </footer>
+

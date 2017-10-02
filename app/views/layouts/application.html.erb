@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= t('app_name')%></title>
+<title>
+<%= t('app_name')%></title>
 	<%= csrf_meta_tags %>
 
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+	<%= stylesheet_link_tag    'my_bootstrap', media: 'all', 'data-turbolinks-track' => 'reload' %>
+	<%= javascript_include_tag 'my_bootstrap', 'data-turbolinks-track' => 'reload' %>
 	<%= render 'application/favicon' %>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	
 	
 <link rel="manifest" href="/manifest.json" />
-<meta name="apple-mobile-web-app-capable" content="yes"></head>
+<meta name="apple-mobile-web-app-capable" content="yes">
 
-<body>
+</head>
 
-	<header class="page-header">
-		<%= render('layouts/navbar') %>
-	</header>
+<body id="page-top">
 
-	<main class="page-main">
+    	<% if params[:action] == "eula" || params[:action] == "policy" %>
+			<%= render 'layouts/navbar_eula_policy' %>
+		<% else%>
+			<%= render 'layouts/navbar' %>
+		<% end %>
+
 		<%= yield %>
-	</main>
-
-	<footer class="page-footer">
-		<%= render('layouts/footer') %>
-	</footer>
+		<%= render 'layouts/footer' %>
 
 </body>
+
 </html>

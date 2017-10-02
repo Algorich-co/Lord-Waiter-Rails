@@ -16,6 +16,11 @@ gem "mini_magick"
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'materialize-sass'
 # gem 'bootstrap-sass', '~> 3.3.6'
+
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'lato-rails'
+gem 'jquery-easing-rails'
+gem 'simple-line-icons-rails'
 gem 'material_icons'
 gem 'pg'
 # gem 'active_admin_flat_skin'
