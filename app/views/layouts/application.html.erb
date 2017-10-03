@@ -6,7 +6,6 @@
 	<%= csrf_meta_tags %>
 
 	<%= stylesheet_link_tag    'my_bootstrap', media: 'all', 'data-turbolinks-track' => 'reload' %>
-	<%= javascript_include_tag 'my_bootstrap', 'data-turbolinks-track' => 'reload' %>
 	<%= render 'application/favicon' %>
 
 	<meta charset="utf-8">
@@ -34,5 +33,5 @@
 		<%= render 'layouts/footer' %>
 
 </body>
-
+	<%= javascript_include_tag 'my_bootstrap', 'data-turbolinks-track' => 'reload' %>
 </html>
