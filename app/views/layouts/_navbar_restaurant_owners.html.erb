@@ -1,7 +1,7 @@
 <% if current_restaurant_owner.subscription.valid_till.nil? || (DateTime.now > current_restaurant_owner.subscription.valid_till ) %>
 <div class="fixed-announcement">
   <div class="announcement">
-    <div class="container">Your restaurant is not available to public, <a href=""> Subscribe</a> and take your business to the next level!</div>
+    <div class="container">Your restaurant is not available to public, <a href="new_email_message_path"> Contact Us</a> to subscribe and take your business to the next level!</div>
   </div>
 </div>
 <% end %>
@@ -18,24 +18,13 @@
 
 
   <li class="bold"><a href="<%= restaurant_owners_index_path %>" class="white-text waves-effect waves-red ">Home</a></li>
-  <li class="no-padding">
-    <ul class="collapsible collapsible-accordion">
-      <li>
-        <a class="white-text collapsible-header waves-effect waves-red">Restaurant<i class="material-icons right white-text">arrow_drop_down</i></a>
-        <div class="collapsible-body">
-          <ul class="blue-grey darken-1">
-            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_details_path %>">Details</a></li>
-            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_restaurants_path %>">Branches</a></li>
-            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_food_items_path %>">Products</a></li>
-            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_restaurant_managers_path %>">Managers</a></li>
-            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_tables_path %>">Tables</a></li>
-            <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_commingsoon_path %>">Deals</a></li>
-            
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </li>
+  <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_details_path %>">Details</a></li>
+  <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_restaurants_path %>">Branches</a></li>
+  <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_food_items_path %>">Products</a></li>
+  <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_restaurant_managers_path %>">Managers</a></li>
+  <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_tables_path %>">Tables</a></li>
+  <li><a class="white-text waves-effect waves-red" href="<%= restaurant_owners_commingsoon_path %>">Deals</a></li>
+
   <li class=""><a href="<%= restaurant_owners_orders_path %>" class="white-text waves-effect waves-red">Orders</a></li>
   <li class=""><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Customer Feeback</a></li>
   <li class="bold"><a href="<%= restaurant_owners_commingsoon_path %>" class="white-text waves-effect waves-red">Customers</a></li>
