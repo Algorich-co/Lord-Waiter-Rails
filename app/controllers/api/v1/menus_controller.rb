@@ -10,8 +10,8 @@ class Api::V1::MenusController < Api::V1::BaseController
       @food_items = FoodItem.where(:restaurant_id => menu_params[:restaurant_id])
       @restaurant = Restaurant.find(menu_params[:restaurant_id])
 
-      @json = {:discount_available => @restaurant.restaurant_owner.discount_available,:discount => @restaurant.restaurant_owner.discount, :restaurant => @restaurant.as_json(:only => [:id,:name,:address,:contact,:discount_available,:discount],:methods => [:image_url]), 
-        :food_items => @food_items.as_json(:only => [:id,:title, :description, :price,:featured],:methods => [:image_url], :include => { :category => { :only => [:id, :name], :methods => :image_url }})}   
+      @json = {:discount_available => @restaurant.restaurant_owner.discount_available,:discount => @restaurant.restaurant_owner.discount, :restaurant => @restaurant.as_json(:only => [:id,:name,:address,:contact,:discount_available,:discount],:methods => [:image_url,:image_url_thumb]), 
+        :food_items => @food_items.as_json(:only => [:id,:title, :description, :price,:featured],:methods => [:image_url,:image_url_thumb], :include => { :category => { :only => [:id, :name], :methods => [:image_url,:image_url_thumb] }})}   
 
         render json: {error: false, message: "success", response: @json}
 

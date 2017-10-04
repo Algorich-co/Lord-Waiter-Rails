@@ -8,10 +8,14 @@ class FoodItem < ApplicationRecord
   validates_presence_of :category
   validates_presence_of :restaurant
   validates :description, length: { in: 0..250 }
-  validates_presence_of :image
+  # validates_presence_of :image
 
   def image_url
   	image.url(:medium)
+  end 
+
+  def image_url_thumb
+    image.url(:thumb)
   end
 
 end

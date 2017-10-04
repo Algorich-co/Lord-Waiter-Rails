@@ -30,4 +30,8 @@ class RestaurantOwner < ApplicationRecord
   	image.url(:medium)
   end
 
+  def image_url_thumb
+    image.url(:thumb)
+  end
+
 end
