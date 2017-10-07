@@ -1,39 +1,45 @@
-  <div class="container">
-
-    <h3>Manager - Login</h3>
-
     <%= render('layouts/flash') %>    
+    <%= javascript_include_tag 'layouts/toast' %>
 
 
-    <div class="row">
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="field input-field col s12">
-        <%= f.email_field :email, autofocus: true, class: "validate #{error_class(resource, :email)}" %>
-        <%= f.label :email, "data-error" => show_errors(resource, :email) %>
+    <div class="section container">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card form-wrapper">
+            <div class="card-content">
+
+              <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <h4 class="center">Manager - Login</h4>
+              <div class="field input-field">
+                <%= f.email_field :email, autofocus: true, class: "validate #{error_class(resource, :email)}" %>
+                <%= f.label :email, "data-error" => show_errors(resource, :email) %>
+              </div>
+
+              <div class="field input-field">
+                <%= f.password_field :password, autocomplete: "off", class: "validate #{error_class(resource, :password)}" %>
+                <%= f.label :password, "data-error" => show_errors(resource, :password) %>
+              </div>
+
+              <% if devise_mapping.rememberable? -%>
+              <div class="field ">
+                <%= f.check_box :remember_me %>
+                <%= f.label :remember_me %>
+              </div>
+              <% end -%>
+
+              <div class="field input-field">
+                <%= recaptcha_tags %>
+                <br>
+              </div>
+
+              <%= f.submit "Log in", class: "btn-large waves-effect waves-light form-button" %>
+
+              <% end %>
+
+              <%= render "restaurant_managers/shared/links" %>
+
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="field input-field col s12">
-        <%= f.password_field :password, autocomplete: "off", class: "validate #{error_class(resource, :password)}" %>
-        <%= f.label :password, "data-error" => show_errors(resource, :password) %>
-      </div>
-
-      <% if devise_mapping.rememberable? -%>
-      <div class="row field col s12">
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
-      </div>
-      <% end -%>
-
-      <div class="field input-field col s12">
-        <%= recaptcha_tags %>
-        <br>
-      </div>
-      
-      <div class="row actions col s12">
-        <%= f.submit "Log in", class: "waves-effect waves-light btn" %>
-      </div>
-      <% end %>
-
-      <%= render "restaurant_managers/shared/links" %>
     </div>
-  </div>

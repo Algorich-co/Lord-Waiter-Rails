@@ -14,9 +14,13 @@
 		<%= render('layouts/navbar_restaurant_owners_out') %>
 	</header>
 
-	<main>
+	<main class="pattern_bg">
 		<%= yield %>
 	</main>
+
+	<footer class="page-footer">
+		<%= render('layouts/footer_old') %>
+	</footer>
 
 </body>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>

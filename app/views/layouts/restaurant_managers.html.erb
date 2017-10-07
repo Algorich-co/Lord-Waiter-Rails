@@ -16,10 +16,17 @@
 	<%= render('layouts/navbar_restaurant_managers') %>
 </header>
 
-<main>
-	<%= yield %>
-</main>
 
+
+	<% if restaurant_manager_signed_in? %>
+		<main>
+			<%= yield %>
+		</main>
+	<% else %>
+		<main class="pattern_bg" >
+			<%= yield %>
+		</main>
+	<% end %>
 </body>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
 </html>

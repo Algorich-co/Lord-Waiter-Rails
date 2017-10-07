@@ -1,16 +1,27 @@
-<h2>Resend unlock instructions</h2>
+    <div class="section container">
+    	<div class="row">
+    		<div class="col s12 m6 offset-m3">
+    			<div class="card form-wrapper">
+    				<div class="card-content">
 
-<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    					<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+    					<h4 class="center">Resend unlock instructions</h4>
 
-  <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
-  </div>
-<% end %>
+    					<%= devise_error_messages! %>
 
-<%= render "restaurant_managers/shared/links" %>
+    					<div class="field">
+    						<%= f.label :email %><br />
+    						<%= f.email_field :email, autofocus: true %>
+    					</div>
+
+    					<%= f.submit "Resend unlock instructions", class: "btn-large waves-effect waves-light form-button"  %>
+    					<% end %>
+
+    					<%= render "restaurant_managers/shared/links" %>
+
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>

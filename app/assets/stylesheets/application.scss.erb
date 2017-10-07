@@ -1,0 +1,240 @@
+@import "materialize/extras/nouislider";
+@import "material_icons";
+@import "animate";
+@import "font-awesome";
+@import "chatrooms";
+@import "messages";
+@import "users";
+
+@import "materialize/components/color";
+$primary-color: color("blue-grey", "darken-4") !default;
+$secondary-color: color("blue-grey", "darken-2") !default;
+$accent-color: #111111 !default;
+@import 'materialize';
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+html{
+	font-family: Lato, Roboto, GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+.trans{
+	background-color: rgba(38, 50, 56, 0.75);
+}
+
+
+.form-button{
+	width: 100%;
+}
+
+
+// html, body {
+// 	height: 100%;
+// 	margin: 0px; 
+// 	padding: 0px;
+// }
+
+body {
+	background: #eee;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+
+
+.primary_background{
+	background: $primary-color;
+	color: white;
+}
+
+.secondary_background{
+	background: $secondary-color;
+	color: white;
+}
+
+.secondary_foreground{
+	color:  $secondary-color;
+}
+
+
+.app-btns{
+
+	width: 100%;
+
+}
+
+.parallax-container {
+	height: 100vh;
+}
+
+.no-content-created{
+	height: 300px;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+// .snackbar.error {
+// 	background-color: red;
+// }
+// .snackbar.alert {
+// 	background-color: yellow;
+// 	color: black;
+// }
+// .snackbar.notice {
+// 	background-color: green;
+// }
+
+
+.fixed-announcement {
+	position: relative;
+	height: 48px;
+	width: 100%;
+	z-index: 999;
+}
+.fixed-announcement .announcement {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background-color: $secondary-color;
+}
+.fixed-announcement .announcement .container {
+	color: #fff;
+	padding: 14px 0;
+	font-size: .9rem;
+}
+.fixed-announcement .announcement .container a {
+	color: #32b9fb;
+}
+a {
+	text-decoration: none;
+}
+a.button-collapse.top-nav {
+	position: absolute;
+	text-align: center;
+	height: 48px;
+	width: 48px;
+	left: 7.5%;
+	top: 55px;
+	float: none;
+	margin-left: -8px;
+	color: #fff;
+	font-size: 36px;
+	z-index: 2;
+}
+
+ul.side-nav.fixed:hover {
+	overflow-y: auto;
+}
+
+ul.side-nav.fixed {
+	overflow: hidden;
+}
+
+.owner-padding {
+	padding-left: 300px;
+}
+
+a.button-collapse.top-nav i {
+	font-size: 32px;
+}
+
+@media only screen and (max-width : 992px) {
+	.owner-padding {
+		padding-left: 0;
+	}
+	#index-banner h1 {
+		margin-top: 56px;
+	}
+}
+
+
+.dashboard-logo{
+	margin-bottom: 16px;
+}
+
+.custom-dark-color{
+	background-color: #1d1e2e;
+	color: white;
+}
+
+.my-pink-text{
+	color: #ee6e73;
+}
+
+#index-banner {
+	background-color: #ee6e73;
+}
+#index-banner .container {
+	position: relative;
+}
+
+#index-banner .header {
+	color: #FFF;
+}
+
+#index-banner h4 {
+	margin-bottom: 40px;
+}
+.header {
+	color: #ee6e73;
+	font-weight: 300;
+}
+
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header{
+	margin-left: 0px !important;
+	padding-left: 32px !important;
+}
+.side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
+	padding-left: 52px;
+}
+
+.heading{
+	font-size: 1.50rem;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollbarstyle::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 0px;
+	background-color: #F5F5F5;
+}
+
+.scrollbarstyle::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.scrollbarstyle::-webkit-scrollbar-thumb
+{
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $primary-color;
+}
+
+
+.pattern_bg{
+	  background: url(<%= asset_path('img/bg-pattern.png') %>), #01579b;
+  background: url(<%= asset_path('img/bg-pattern.png') %>), -webkit-linear-gradient(to left, #01579b, #202133);
+  background: url(<%= asset_path('img/bg-pattern.png') %>), linear-gradient(to left, #01579b, #202133); 
+}

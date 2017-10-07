@@ -1,20 +1,26 @@
-<div class="container">
+<div class="section container">
+	<div class="row">
+		<div class="col s12 m6 offset-m3">
+			<div class="card form-wrapper">
+				<div class="card-content">
+					<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
 
-<h3>Resend confirmation instructions</h3>
-<div class="row">
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+					<h4 class="center">Resend confirmation instructions</h4>
 
-  <div class="field input-field col s12">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
-  </div>
+					<%= devise_error_messages! %>
 
-  <div class="row actions col s12">
-    <%= f.submit "Resend confirmation instructions", class: "waves-effect waves-light btn" %>
-  </div>
-<% end %>
+					<div class="field input-field">
+						<%= f.label :email %><br />
+						<%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+					</div>
 
-<%= render "restaurant_owners/shared/links" %>
-</div>
+					<%= f.submit "Resend confirmation instructions", class: "btn-large waves-effect waves-light form-button" %>
+					<% end %>
+
+					<%= render "restaurant_owners/shared/links" %>
+
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
