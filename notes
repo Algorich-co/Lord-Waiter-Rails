@@ -15,9 +15,8 @@ Execute following commands once on console to create RPush app
 
 app = Rpush::Gcm::App.new
 app.name = "lordwaiter"
-app.auth_key = "SERVER_KEY"
+app.auth_key = "AAAA5edLIk8:APA91bGQ9waRAnZ2ZI2a9CH5CbnWeRYSfW6CmMY5-Y_yrYoJJ4ht7D3yINiymmm4tVjat48TM1LL--t6Fz4_lbnWBD92l99m24uB-iz_lM2r54RQEDu2a7L-rdCo_tFZ_QSSRUMVrPsI"
 app.connections = 1
 app.save!
-
 
 
