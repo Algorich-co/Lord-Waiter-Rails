@@ -1,10 +1,10 @@
 class Restaurant < ApplicationRecord
   belongs_to :restaurant_owner
-	has_one :restaurant_manager
-	has_many :food_items
+  has_one :restaurant_manager
+  has_many :food_items
   has_many :tables
   has_many :orders
-  has_attached_file :image, styles: { medium: "500x500>", thumb: "150x150>" }, default_url: "/assets/:style/restaurant.jpg"
+  has_attached_file :image, styles: { medium: "500x500>", thumb: "150x150>" }, default_url: "/assets/:style/restaurant.png"
 
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
   validates_presence_of :name
