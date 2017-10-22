@@ -19,3 +19,12 @@
 //= require bootstrap
 //= require new-age 
 //= require jquery.easing
+//= require snackbar
+
+
+$( document ).on('turbolinks:load', function() {
+
+	$.each( flashMessages, function(key, value){
+		$.snackbar({content: value, style: key, timeout: 4000});
+	});
+});

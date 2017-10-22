@@ -16,12 +16,18 @@
 //= require materialize-sprockets
 //= require materialize/extras/nouislider
 //= require d3
+//= require snackbar
 //= require_tree ./channels
 //= require chatrooms
 // require_tree .
 
 
 $( document ).on('turbolinks:load', function() {
+
+	$.each( flashMessages, function(key, value){
+		$.snackbar({content: value, style: key, timeout: 4000});
+	});
+
 	$('.materialboxed').materialbox();
 	$('.carousel').carousel();
 	$('.parallax').parallax();

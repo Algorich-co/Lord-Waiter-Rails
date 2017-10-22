@@ -4,6 +4,8 @@
 @import "lato";
 @import "pricing-table";
 @import "new-age";
+@import "snackbar";
+@import "snackbar-material"; //optional
 
 
 .scrollbarstyle::-webkit-scrollbar-track
@@ -55,4 +57,17 @@
 	background: url(<%= asset_path('img/bg-pattern.png') %>), #202133;
 	background: url(<%= asset_path('img/bg-pattern.png') %>), -webkit-linear-gradient(to left, #202133, #202133);
 	background: url(<%= asset_path('img/bg-pattern.png') %>), linear-gradient(to left, #202133, #202133); 
+}
+
+
+
+.snackbar.error {
+  background-color: red;
+}
+.snackbar.alert {
+  background-color: yellow;
+  color: black;
+}
+.snackbar.notice {
+  background-color: green;
 }

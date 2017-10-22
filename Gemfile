@@ -18,6 +18,7 @@ gem 'materialize-sass'
 # gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'bootstrap', '~> 4.0.0.beta'
+gem 'snackbarjs-rails'
 gem 'lato-rails'
 gem 'jquery-easing-rails'
 gem 'simple-line-icons-rails'
