@@ -49,7 +49,7 @@ class RestaurantOwners::FoodItemsController < ApplicationController
 	private
 
 	def food_item_params
-		params.require(:food_item).permit(:title, :price, :featured,:restaurant_id, :category_id, :image)
+		params.require(:food_item).permit(:title, :price, :featured,:restaurant_id, :category_id, :image, :description)
 	end
 
 	def set_food_item

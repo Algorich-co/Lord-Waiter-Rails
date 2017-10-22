@@ -25,6 +25,7 @@
     <%= f.label :price, "data-error" => show_errors(@food_item, :price) %>
   </div>
 
+
   <div class="field input-field col s12">
     <%= f.select :restaurant_id, current_restaurant_owner.restaurants.all.map {|p| [ p.name, p.id ] }, { :include_blank => "Select Restaurant" } %>
     <%= f.label :restaurant_id, "data-error" => show_errors(@food_item, :restaurant_id) %>
@@ -33,6 +34,11 @@
   <div class="field input-field col s12">
     <%= f.select :category_id, Category.all.map {|p| [ p.name, p.id ] }, { :include_blank => "Select Category" } %>
     <%= f.label :category_id, "data-error" => show_errors(@food_item, :category_id) %>
+  </div>
+
+  <div class="field input-field col s12">
+    <%= f.text_area :description, autocomplete: "off", class: "materialize-textarea validate #{error_class(@food_item, :description)}" %>
+    <%= f.label :description, "data-error" => show_errors(@food_item, :description) %>
   </div>
 
   <div class="row field col s12">
