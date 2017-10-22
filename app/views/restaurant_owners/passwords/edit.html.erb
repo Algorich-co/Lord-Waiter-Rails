@@ -5,25 +5,24 @@
         <div class="card-content">
 
           <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-          <h4 class="center">Change your password</h4>
+          <h4 class="center bottom-margin-5">Change your password</h4>
 
           <%= devise_error_messages! %>
           <%= f.hidden_field :reset_password_token %>
 
           <div class="field input-field">
-            <%= f.label :password, "New password" %><br />
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em><br />
-            <% end %>
-            <%= f.password_field :password, autofocus: true, autocomplete: "off" %>
+            <%= f.password_field :password, autofocus: true, autocomplete: "off", required: true, class: "validate" %>
+            <%= f.label :password, 'New Password ( 6 characters minimum )' %><br />
+
           </div>
 
           <div class="field input-field">
+            <%= f.password_field :password_confirmation, autocomplete: "off", required: true, class: "validate" %>
             <%= f.label :password_confirmation, "Confirm new password" %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "off" %>
+
           </div>
 
-          <%= f.submit "Change my password", class: "btn-large waves-effect waves-light form-button" %>
+          <%= f.submit "Change Password", class: "btn-large waves-effect waves-light form-button" %>
           <% end %>
 
           <%= render "restaurant_owners/shared/links" %>

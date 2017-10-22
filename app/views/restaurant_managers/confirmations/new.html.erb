@@ -7,16 +7,16 @@
 
 					<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
 
-					<h4>Resend confirmation instructions</h4>
+					<h4 class="center bottom-margin-5">Resend confirmation instructions</h4>
 
 					<%= devise_error_messages! %>
 
 					<div class="field">
 						<%= f.label :email %><br />
-						<%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+						<%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), required: true, class: "validate" %>
 					</div>
 
-					<%= f.submit "Resend confirmation instructions", class: "btn-large waves-effect waves-light form-button" %>
+					<%= f.submit "Resend confirmation", class: "btn-large waves-effect waves-light form-button" %>
 					<% end %>
 
 					<%= render "restaurant_managers/shared/links" %>

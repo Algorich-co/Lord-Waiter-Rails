@@ -6,13 +6,13 @@
 
 					<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
 
-					<h4 class="center">Resend unlock instructions</h4>
+					<h4 class="center bottom-margin-5">Resend unlock instructions</h4>
 
 					<%= devise_error_messages! %>
 
 					<div class="field input-field">
+						<%= f.email_field :email, autofocus: true, required: true, class: "validate" %>
 						<%= f.label :email %><br />
-						<%= f.email_field :email, autofocus: true %>
 					</div>
 
 					<%= f.submit "Resend Instructions", class: "btn-large waves-effect waves-light form-button" %>

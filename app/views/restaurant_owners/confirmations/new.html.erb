@@ -10,11 +10,11 @@
 					<%= devise_error_messages! %>
 
 					<div class="field input-field">
-						<%= f.label :email %><br />
-						<%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+						<%= f.email_field :email, autofocus: true, required: true, class: "validate", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+						<%= f.label :email %>
 					</div>
 
-					<%= f.submit "Resend confirmation instructions", class: "btn-large waves-effect waves-light form-button" %>
+					<%= f.submit "Resend Confirmation", class: "btn-large waves-effect waves-light form-button" %>
 					<% end %>
 
 					<%= render "restaurant_owners/shared/links" %>

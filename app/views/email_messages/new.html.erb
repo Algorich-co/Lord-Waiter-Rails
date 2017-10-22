@@ -3,35 +3,33 @@
 		<div class="col s12 m6 offset-m3">
 			<div class="card form-wrapper">
 				<div class="card-content">
-					<div id="NewEmailMessageForm">
-						<%= form_for @message, url: create_email_message_url, class: "" do |f| %>
+					<%= form_for @message, url: create_email_message_url, class: "" do |f| %>
 
-						<h4 class="center">Contact Us</h4>
-						<div class="field input-field ">
-							<%= f.label :email %>
-							<%= f.email_field :email, autofocus: true %>
-						</div>
+					<h4 class="center">Contact Us</h4>
 
-						<div class="field input-field">
-							<%= f.label :name %>
-							<%= f.text_field :name, autocomplete: "off" %>
-						</div>
-
-						<div class="field input-field ">
-							<%= f.text_area :body, autocomplete: "off", class: "materialize-textarea" %>
-							<%= f.label :body %>
-
-						</div>
-
-						<div class="field input-field col s12">
-							<%= recaptcha_tags %>
-							<br>
-						</div>
-
-						<%= f.submit "Send Message", class: "btn-large waves-effect waves-light form-button" %>
-
-						<% end %>
+					<div class="field input-field ">
+						<%= f.email_field :email, autofocus: true, required: true, class: "validate" %>
+						<%= f.label :email %>
 					</div>
+
+					<div class="field input-field">
+						<%= f.text_field :name, autocomplete: "off", required: true, class: "validate" %>
+						<%= f.label :name %>
+					</div>
+
+					<div class="field input-field ">
+						<%= f.text_area :body, autocomplete: "off", required: true, class: "materialize-textarea validate" %>
+						<%= f.label :body %>
+					</div>
+
+					<div class="field input-field">
+						<%= recaptcha_tags %>
+						<br>
+					</div>
+
+					<%= f.submit "Send Message", class: "btn-large waves-effect waves-light form-button" %>
+
+					<% end %>
 				</div>
 			</div>
 		</div>
