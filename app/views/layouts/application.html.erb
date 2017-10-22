@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>
-<%= t('app_name')%></title>
-	<%= csrf_meta_tags %>
+	<title>
+		<%= t('app_name')%></title>
+		<%= csrf_meta_tags %>
 
-	<%= stylesheet_link_tag 'my_bootstrap', media: 'all', 'data-turbolinks-track' => 'reload' %>
-	<%= render 'application/favicon' %>
+		<%= stylesheet_link_tag 'my_bootstrap', media: 'all', 'data-turbolinks-track' => 'reload' %>
+		<%= render 'application/favicon' %>
 
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-	
-<link rel="manifest" href="/manifest.json" />
-<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
 
-</head>
 
-<body id="page-top">
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
 
-    	<% if params[:action] == "eula" || params[:action] == "policy" %>
-			<%= render 'layouts/navbar_eula_policy' %>
+	</head>
+
+	<body id="page-top">
+
+		<% if params[:action] == "eula" || params[:action] == "policy" %>
+		<%= render 'layouts/navbar_eula_policy' %>
 		<% else%>
-			<%= render 'layouts/navbar' %>
+		<%= render 'layouts/navbar' %>
 		<% end %>
 
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 
-</body>
+	</body>
 	<%= javascript_include_tag 'my_bootstrap', 'data-turbolinks-track' => 'reload' %>
 	<%= javascript_tag do %>
-	  window.flashMessages = $.parseJSON('<%=j flash.to_hash.to_json.html_safe %>');
+	window.flashMessages = $.parseJSON('<%=j flash.to_hash.to_json.html_safe %>');
 	<% end %>
 </html>

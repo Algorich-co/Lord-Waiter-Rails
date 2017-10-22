@@ -7,31 +7,39 @@
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
 	<%= render 'application/favicon' %>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	
+	<link rel="manifest" href="/manifest.json" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	
 </head>
 
 <body>
-<header>
+	<header>
 
-	<%= render('layouts/navbar_restaurant_managers') %>
-</header>
+		<%= render('layouts/navbar_restaurant_managers') %>
+	</header>
 
 
 
 	<% if restaurant_manager_signed_in? %>
-		<main>
-			<%= yield %>
-		</main>
+	<main>
+		<%= yield %>
+	</main>
 	<% else %>
-		<main class="pattern_bg" >
-			<%= yield %>
-		</main>
+	<main class="pattern_bg" >
+		<%= yield %>
+	</main>
 	<% end %>
 </body>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
-	<%= javascript_tag do %>
-	  window.flashMessages = $.parseJSON('<%=j flash.to_hash.to_json.html_safe %>');
-	<% end %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+<%= javascript_tag do %>
+window.flashMessages = $.parseJSON('<%=j flash.to_hash.to_json.html_safe %>');
+<% end %>
 </html>
-
 
