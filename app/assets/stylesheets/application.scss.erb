@@ -247,14 +247,20 @@ a.button-collapse.top-nav i {
 }
 
 .snackbar.error {
-  background-color: red;
+	@extend .red, .darken-1;
+	@extend .white-text;
+  // background-color: red;
 }
 .snackbar.alert {
-  background-color: yellow;
-  color: black;
+	@extend .teal, .darken-1;
+	@extend .white-text;
+  // background-color: yellow;
+  // color: black;
 }
 .snackbar.notice {
-  background-color: green;
+	@extend .light-blue, .darken-3;
+	@extend .white-text;
+  // background-color: green;
 }
 
 .bottom-margin-5{
