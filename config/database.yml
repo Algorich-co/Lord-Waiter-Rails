@@ -1,0 +1,30 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  host: localhost
+  database: <%= ENV['LW_DB_DEV'] %>
+  username: <%= ENV['LW_USER'] %>
+  password: <%= ENV['LW_PASS'] %>
+
+  
+test:
+  <<: *default
+  host: localhost
+  database: <%= ENV['LW_DB_TEST'] %>
+  username: <%= ENV['LW_USER'] %>
+  password: <%= ENV['LW_PASS'] %>
+
+# production:
+#   <<: *default
+#   url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  <<: *default
+  host: localhost
+  database: <%= ENV['LW_DB_PROD'] %>
+  username: <%= ENV['LW_USER'] %>
+  password: <%= ENV['LW_PASS'] %>

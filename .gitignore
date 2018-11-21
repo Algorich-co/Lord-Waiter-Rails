@@ -52,6 +52,6 @@ app/assets/images/qrCodes/
 app/assets/images/medium/
 app/assets/images/thumb/
 
-config/database.yml
-config/secrets.yml
-config/environments/production.rb
+# config/database.yml
+# config/secrets.yml
+# config/environments/production.rb
