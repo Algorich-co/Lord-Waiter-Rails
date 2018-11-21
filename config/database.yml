@@ -24,7 +24,7 @@ test:
 
 production:
   <<: *default
-  host: localhost
+  host: <%= ENV['LW_DB_HOST'] %>
   database: <%= ENV['LW_DB_PROD'] %>
   username: <%= ENV['LW_USER'] %>
   password: <%= ENV['LW_PASS'] %>
