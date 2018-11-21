@@ -17,7 +17,9 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'materialize-sass'
 # gem 'bootstrap-sass', '~> 3.3.6'
 
-gem 'bootstrap', '~> 4.0.0.beta'
+
+
+gem "bootstrap", ">= 4.1.2"
 gem 'snackbarjs-rails'
 gem 'lato-rails'
 gem 'jquery-easing-rails'
