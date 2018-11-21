@@ -14,7 +14,8 @@ gem 'rqrcode'
 gem 'paperclip', '~> 5.1'
 gem "mini_magick"
 gem 'active_model_serializers', '~> 0.10.0'
-gem 'materialize-sass'
+# gem 'materialize-sass'
+gem 'materialize-sass', '~> 1.0.0'
 # gem 'bootstrap-sass', '~> 3.3.6'
 
 

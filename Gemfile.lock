@@ -358,7 +358,7 @@ DEPENDENCIES
   lato-rails
   listen (~> 3.0.5)
   material_icons
-  materialize-sass
+  materialize-sass (~> 1.0.0)
   mini_magick
   net-http-persistent (< 3)
   nokogiri
