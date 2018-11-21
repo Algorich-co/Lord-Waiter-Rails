@@ -1,5 +1,15 @@
 set :stage, :production
-server 'lordwaiter.com', user: 'ubuntu', roles: %w{web app db}
+# server '54.212.18.34', user: 'ubuntu', roles: %w{web app db}
+server "54.212.18.34",
+  user: "ubuntu",
+  roles: %w{web app db},
+  ssh_options: {
+    user: "ubuntu", # overrides user setting above
+    keys: %w(/home/node/remote_ssh_private.pem),
+    forward_agent: false,
+    auth_methods: %w(publickey password)
+    # password: "please use keys"
+  }
 
 # server-based syntax
 # ======================
