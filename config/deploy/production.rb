@@ -2,7 +2,7 @@ set :stage, :production
 # server '54.212.18.34', user: 'ubuntu', roles: %w{web app db}
 server "54.212.18.34",
   user: "ubuntu",
-  roles: %w{web app db},
+  roles: %w{web app},
   ssh_options: {
     user: "ubuntu", # overrides user setting above
     keys: %w(/home/node/remote_ssh_private.pem),
@@ -10,6 +10,8 @@ server "54.212.18.34",
     auth_methods: %w(publickey password)
     # password: "please use keys"
   }
+
+set :migration_role, :app
 
 # server-based syntax
 # ======================

@@ -6,30 +6,30 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :preserve_files => true,
-    :s3_credentials => {
-      bucket: ENV['BUCKET_NAME'],
-      access_key_id: ENV['ACCESS_KEY_ID'],
-      secret_access_key: ENV['SECRET_ACCESS_KEY'],
-      s3_region: ENV['S3_REGION'],
-      s3_host_name: ENV['S3_HOST_NAME'],
-    }
-  }
+  # config.paperclip_defaults = {
+  #   :storage => :s3,
+  #   :preserve_files => true,
+  #   :s3_credentials => {
+  #     bucket: ENV['BUCKET_NAME'],
+  #     access_key_id: ENV['ACCESS_KEY_ID'],
+  #     secret_access_key: ENV['SECRET_ACCESS_KEY'],
+  #     s3_region: ENV['S3_REGION'],
+  #     s3_host_name: ENV['S3_HOST_NAME'],
+  #   }
+  # }
 
   ActionMailer::Base.delivery_method = :smtp 
-  ActionMailer::Base.smtp_settings = { 
-    :address                    =>      ENV['EMAIL_ADDRESS_HOST'], 
-    :port                         =>      465, 
-    :user_name                 =>      ENV['EMAIL_ADDRESS'], 
-    :domain                     =>      ENV['DOMAIN'],
-    :password                   =>      ENV['EMAIL_PASSWORD'], 
-    :authentication             =>      "plain", 
-    :ssl                            =>      true, 
-    :tls                            =>      true, 
-    :enable_starttls_auto   =>      true 
-  }
+  # ActionMailer::Base.smtp_settings = { 
+  #   :address                    =>      ENV['EMAIL_ADDRESS_HOST'], 
+  #   :port                         =>      465, 
+  #   :user_name                 =>      ENV['EMAIL_ADDRESS'], 
+  #   :domain                     =>      ENV['DOMAIN'],
+  #   :password                   =>      ENV['EMAIL_PASSWORD'], 
+  #   :authentication             =>      "plain", 
+  #   :ssl                            =>      true, 
+  #   :tls                            =>      true, 
+  #   :enable_starttls_auto   =>      true 
+  # }
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
