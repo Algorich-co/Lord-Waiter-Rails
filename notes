@@ -20,3 +20,7 @@ app.connections = 1
 app.save!
 
 
+Add recaptcha keys and all other environment variables
+
+export RECAPTCHA_SITE_KEY  = '6Lc6BAAAAAAAAChqRbQZcn_yyyyyyyyyyyyyyyyy'
+export RECAPTCHA_SECRET_KEY = '6Lc6BAAAAAAAAKN3DRm6VA_xxxxxxxxxxxxxxxxx'
