@@ -18,13 +18,13 @@ test:
   username: <%= ENV['LW_USER'] %>
   password: <%= ENV['LW_PASS'] %>
 
-# production:
-#   <<: *default
-#   url: <%= ENV['DATABASE_URL'] %>
-
 production:
   <<: *default
-  host: <%= ENV['LW_DB_HOST'] %>
-  database: <%= ENV['LW_DB_PROD'] %>
-  username: <%= ENV['LW_USER'] %>
-  password: <%= ENV['LW_PASS'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
+# production:
+#   <<: *default
+#   host: <%= ENV['LW_DB_HOST'] %>
+#   database: <%= ENV['LW_DB_PROD'] %>
+#   username: <%= ENV['LW_USER'] %>
+#   password: <%= ENV['LW_PASS'] %>
