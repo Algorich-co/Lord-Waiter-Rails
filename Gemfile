@@ -18,7 +18,7 @@ gem 'materialize-sass'
 # gem 'bootstrap-sass', '~> 3.3.6'
 
 
-
+gem 'bootsnap', require: false
 gem "bootstrap", ">= 4.1.2"
 gem 'snackbarjs-rails'
 gem 'lato-rails'
