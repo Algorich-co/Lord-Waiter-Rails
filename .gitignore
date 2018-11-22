@@ -51,6 +51,8 @@ node_modules/
 app/assets/images/qrCodes/
 app/assets/images/medium/
 app/assets/images/thumb/
+public/assets/qrCodes/
+
 
 # config/database.yml
 # config/secrets.yml
