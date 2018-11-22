@@ -2,7 +2,7 @@ class RestaurantOwners::RegistrationsController < Devise::RegistrationsControlle
   layout 'restaurant_owners_out'
   prepend_before_action :check_captcha, only: [:create, :update]
   # after_action :create_subscription, only: [:create]
-  after_filter :create_subscription
+  after_action :create_subscription
 
   private
 
